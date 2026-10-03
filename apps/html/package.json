@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "license": "Apache-2.0",
   "private": true,
-  "description": "HTML editor module: source-of-truth HTML editing with live preview, hosted by shell tabs",
+  "description": "sOffice HTML - Trình soạn thảo HTML AI thông minh",
   "main": "out/main/index.js",
   "scripts": {
     "dev": "electron-vite dev",
@@ -43,5 +43,5 @@
     "vite": "^7.3.1",
     "vitest": "^4.1.11"
   },
-  "author": "GenOffice"
+  "author": "Bùi Thành Ninh"
 }

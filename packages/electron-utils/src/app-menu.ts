@@ -581,7 +581,7 @@ export function aboutMenuItem(labels: AppMenuLabels): MenuItemConstructorOptions
         type: 'info',
         title: 'sOffice',
         message: 'sOffice',
-        detail: `${labels.version} ${version}`,
+        detail: `${labels.version} ${version}\n\nPhiên bản chính thức do tác giả Bùi Thành Ninh phát triển.\nWebsite: https://soffice.caqa.io.vn\nKho lưu trữ: https://github.com/buithanhninh/soffice`,
         buttons: ['OK', labels.copy, ...(canCheck ? [labels.checkUpdates] : [])],
         defaultId: 0,
         cancelId: 0,

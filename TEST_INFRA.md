@@ -137,7 +137,7 @@ The 16 features from `PROJECT.md § Feature Inventory` are mapped below:
 
 ### Feature 12: Git Remote & GitHub Release Automation
 - **T1.12.1**: Git remote `origin` is configured to `https://github.com/buithanhninh/soffice.git`.
-- **T1.12.2**: Git remote `upstream` is configured to `https://github.com/genspark-ai/genoffice.git`.
+- **T1.12.2**: Git remote `origin` is configured to `https://github.com/buithanhninh/soffice.git`.
 - **T1.12.3**: Release workflow job `create-release` aggregates artifacts from linux, windows, and macos jobs.
 - **T1.12.4**: `create-release` generates SHA256 checksums (`SHA256SUMS.txt`) for all packages.
 - **T1.12.5**: GitHub Release action attaches Linux, Windows, macOS installers, and checksum files.
@@ -290,7 +290,7 @@ The 16 features from `PROJECT.md § Feature Inventory` are mapped below:
 
 ## 6. Tier 3: Cross-Feature Combinations (7 Suites)
 
-- **C1: OpenAI Provider (F5) + Slides AI Generator (F7) + Rebranded Glyphs (F3)**:
+- **C1: OpenAI Provider (F5) + Slides AI Generator (F7) + sOffice Brand Glyphs (F3)**:
   Configure OpenAI as active provider, launch Slides, open AI generator panel (verifying sOffice glyph), generate 3 slides, verify slides populate the canvas without calling Genspark proxy.
 - **C2: Gemini BYOK (F6) + Sheets Formula Assistant (F7) + Brand Icons (F2)**:
   Enter Gemini API key in Settings, launch Sheets, open Formula Assistant (verifying sOffice icon and formula prompt), verify formula query routes to Gemini endpoint and formula inserts into cell A1.
@@ -355,7 +355,7 @@ cd /home/ubuntu/SOFFICE && node e2e/run-all-tiers.mjs
 ### 8.2 Running via Playwright Test Runner under Xvfb
 Run individual spec suites or the full E2E suite headlessly:
 ```bash
-# Run Branding & UI Rebranding Spec
+# Run Branding & UI Verification Spec
 cd /home/ubuntu/SOFFICE && xvfb-run -a npx playwright test --config e2e/playwright.config.ts e2e/soffice-branding.spec.ts
 
 # Run AI Settings & BYOK Spec

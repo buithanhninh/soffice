@@ -34,7 +34,7 @@
 ## Milestones
 | # | Name | Scope | Dependencies | Status |
 |---|------|-------|-------------|--------|
-| M1 | Full Rebranding & Asset Synchronization | Features 1, 2, 3, 4 | none | PLANNED |
+| M1 | sOffice Identity & Asset Synchronization | Features 1, 2, 3, 4 | none | PLANNED |
 | M2 | AI Subsystem Restructure: OpenAI & Gemini BYOK | Features 5, 6, 7, 8 | none | PLANNED |
 | M3 | Multi-platform Packaging, Release CI & GitHub Release | Features 9, 10, 11, 12 | M1, M2 | PLANNED |
 | M4 | Final E2E Verification & Adversarial Hardening | Features 13, 14, 15, 16 | M1, M2, M3 | PLANNED |

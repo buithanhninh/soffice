@@ -5,7 +5,7 @@
   "license": "Apache-2.0",
   "homepage": "https://soffice.caqa.io.vn",
   "private": true,
-  "description": "sOffice - AI-Native Office Suite (Docs, Sheets, Slides, PDF)",
+  "description": "sOffice - Bộ ứng dụng văn phòng AI thông minh thế hệ mới (Docs, Sheets, Slides, PDF) do Bùi Thành Ninh phát triển",
   "main": "out/main/index.js",
   "desktopName": "soffice.desktop",
   "scripts": {
@@ -50,7 +50,7 @@
     "vite": "^7.3.1",
     "vitest": "^4.1.11"
   },
-  "author": "sOffice Team <support@soffice.caqa.io.vn>",
+  "author": "Bùi Thành Ninh <support@soffice.caqa.io.vn>",
   "repository": {
     "type": "git",
     "url": "https://github.com/buithanhninh/soffice.git"

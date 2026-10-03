@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "license": "Apache-2.0",
   "private": true,
-  "description": "AI-native pptx editor: byte-fidelity open + high-fidelity Konva render + element-patch save",
+  "description": "sOffice Slides - Trình chiếu AI thông minh (.pptx)",
   "main": "out/main/index.js",
   "scripts": {
     "dev": "electron-vite dev",
@@ -46,7 +46,7 @@
     "vite": "^7.3.1",
     "vitest": "^4.1.11"
   },
-  "author": "GenOffice",
+  "author": "Bùi Thành Ninh",
   "build": {
     "appId": "com.genoffice.slides",
     "productName": "GenOffice Slides",

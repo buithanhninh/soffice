@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-02T05:59:24.390Z",
+  "timestamp": "2026-10-03T07:06:46.443Z",
   "summary": {
     "total": 171,
     "passed": 171,
@@ -31,14 +31,14 @@
           "description": "Ribbon components across Docs, Sheets, Slides, Markdown, HTML, PDF contain zero Genspark brand labels",
           "status": "PASSED",
           "error": null,
-          "durationMs": 91
+          "durationMs": 11
         },
         {
           "id": "T1.1.4",
           "description": "Settings Modal headings and navigation use sOffice branding",
           "status": "PASSED",
           "error": null,
-          "durationMs": 2
+          "durationMs": 1
         },
         {
           "id": "T1.1.5",
@@ -52,7 +52,7 @@
           "description": "App icon assets exist across standard resolutions in apps/shell/build/icons",
           "status": "PASSED",
           "error": null,
-          "durationMs": 1
+          "durationMs": 0
         },
         {
           "id": "T1.2.2",
@@ -80,14 +80,14 @@
           "description": "Home screen SVG brand logo component renders with valid markup",
           "status": "PASSED",
           "error": null,
-          "durationMs": 1
+          "durationMs": 0
         },
         {
           "id": "T1.3.1",
           "description": "Docs editor ribbon/dock renders clean sOffice/sAI glyph",
           "status": "PASSED",
           "error": null,
-          "durationMs": 0
+          "durationMs": 1
         },
         {
           "id": "T1.3.2",
@@ -136,7 +136,7 @@
           "description": "apps/shell/electron-builder.cjs specifies productName: sOffice",
           "status": "PASSED",
           "error": null,
-          "durationMs": 1
+          "durationMs": 0
         },
         {
           "id": "T1.4.4",
@@ -150,7 +150,7 @@
           "description": "apps/shell/electron-builder.cjs specifies executableName: soffice",
           "status": "PASSED",
           "error": null,
-          "durationMs": 0
+          "durationMs": 1
         },
         {
           "id": "T1.5.1",
@@ -178,7 +178,7 @@
           "description": "activeProvider resolves active LLM provider securely",
           "status": "PASSED",
           "error": null,
-          "durationMs": 1
+          "durationMs": 0
         },
         {
           "id": "T1.5.5",
@@ -192,7 +192,7 @@
           "description": "SettingsModal includes AI Model section",
           "status": "PASSED",
           "error": null,
-          "durationMs": 0
+          "durationMs": 1
         },
         {
           "id": "T1.6.2",
@@ -206,14 +206,14 @@
           "description": "AiModelPane provides API key input with masking",
           "status": "PASSED",
           "error": null,
-          "durationMs": 1
+          "durationMs": 0
         },
         {
           "id": "T1.6.4",
           "description": "AiModelPane implements live connection testing button",
           "status": "PASSED",
           "error": null,
-          "durationMs": 0
+          "durationMs": 1
         },
         {
           "id": "T1.6.5",
@@ -227,7 +227,7 @@
           "description": "IPC streaming channels are declared for AI communication",
           "status": "PASSED",
           "error": null,
-          "durationMs": 4
+          "durationMs": 6
         },
         {
           "id": "T1.7.2",
@@ -255,14 +255,14 @@
           "description": "Error contracts specify errNoApiKey handling for unconfigured keys",
           "status": "PASSED",
           "error": null,
-          "durationMs": 1
+          "durationMs": 0
         },
         {
           "id": "T1.8.1",
           "description": "packages/ai-provider exports media and search settings defaults",
           "status": "PASSED",
           "error": null,
-          "durationMs": 0
+          "durationMs": 1
         },
         {
           "id": "T1.8.2",
@@ -283,7 +283,7 @@
           "description": "SettingsModal includes AI Media & Search section",
           "status": "PASSED",
           "error": null,
-          "durationMs": 1
+          "durationMs": 0
         },
         {
           "id": "T1.8.5",
@@ -311,14 +311,14 @@
           "description": "Portable .exe artifact naming template is configured",
           "status": "PASSED",
           "error": null,
-          "durationMs": 0
+          "durationMs": 1
         },
         {
           "id": "T1.9.4",
           "description": "Windows executableName is sOffice",
           "status": "PASSED",
           "error": null,
-          "durationMs": 1
+          "durationMs": 0
         },
         {
           "id": "T1.9.5",
@@ -332,7 +332,7 @@
           "description": "Linux targets configure AppImage, deb, and rpm",
           "status": "PASSED",
           "error": null,
-          "durationMs": 0
+          "durationMs": 1
         },
         {
           "id": "T1.10.2",
@@ -374,7 +374,7 @@
           "description": "CI workflow defines build-macos job on macos-latest",
           "status": "PASSED",
           "error": null,
-          "durationMs": 0
+          "durationMs": 4
         },
         {
           "id": "T1.11.3",
@@ -395,28 +395,28 @@
           "description": "CI workflow uploads macOS DMG release artifacts",
           "status": "PASSED",
           "error": null,
-          "durationMs": 0
+          "durationMs": 1
         },
         {
           "id": "T1.12.1",
           "description": "Git remote origin URL points to buithanhninh/soffice.git",
           "status": "PASSED",
           "error": null,
-          "durationMs": 9
+          "durationMs": 6
         },
         {
           "id": "T1.12.2",
-          "description": "Git remote upstream URL points to genspark-ai/genoffice.git",
+          "description": "Git remote origin URL points to buithanhninh/soffice.git",
           "status": "PASSED",
           "error": null,
-          "durationMs": 7
+          "durationMs": 4
         },
         {
           "id": "T1.12.3",
           "description": "CI workflow defines create-release job",
           "status": "PASSED",
           "error": null,
-          "durationMs": 1
+          "durationMs": 0
         },
         {
           "id": "T1.12.4",
@@ -500,7 +500,7 @@
           "description": "apps/shell maintains comprehensive component test suite",
           "status": "PASSED",
           "error": null,
-          "durationMs": 1
+          "durationMs": 0
         },
         {
           "id": "T1.15.1",
@@ -535,7 +535,7 @@
           "description": "Root package.json provides test:e2e script",
           "status": "PASSED",
           "error": null,
-          "durationMs": 1
+          "durationMs": 0
         },
         {
           "id": "T1.16.1",
@@ -598,7 +598,7 @@
           "description": "Rapid tab switching maintains correct active document window title",
           "status": "PASSED",
           "error": null,
-          "durationMs": 1
+          "durationMs": 0
         },
         {
           "id": "T2.1.4",
@@ -647,7 +647,7 @@
           "description": "File extension associations (.docx, .xlsx, .pptx) map to sOffice",
           "status": "PASSED",
           "error": null,
-          "durationMs": 1
+          "durationMs": 0
         },
         {
           "id": "T2.3.1",
@@ -696,7 +696,7 @@
           "description": "Multi-arch packaging template creates distinct deb package names",
           "status": "PASSED",
           "error": null,
-          "durationMs": 1
+          "durationMs": 0
         },
         {
           "id": "T2.4.3",
@@ -724,7 +724,7 @@
           "description": "Unset OpenAI API key prevents silent fallback to Genspark proxy",
           "status": "PASSED",
           "error": null,
-          "durationMs": 0
+          "durationMs": 1
         },
         {
           "id": "T2.5.2",
@@ -766,7 +766,7 @@
           "description": "Malformed API key triggers 401 Unauthorized status pill gracefully",
           "status": "PASSED",
           "error": null,
-          "durationMs": 1
+          "durationMs": 0
         },
         {
           "id": "T2.6.3",
@@ -780,7 +780,7 @@
           "description": "Switching providers (OpenAI -> Gemini) manages dirty state accurately",
           "status": "PASSED",
           "error": null,
-          "durationMs": 0
+          "durationMs": 1
         },
         {
           "id": "T2.6.5",
@@ -878,7 +878,7 @@
           "description": "64-bit architecture packaging bundles x86_64 native binaries",
           "status": "PASSED",
           "error": null,
-          "durationMs": 1
+          "durationMs": 0
         },
         {
           "id": "T2.9.4",
@@ -913,7 +913,7 @@
           "description": "AppImage package has executable permission bit set",
           "status": "PASSED",
           "error": null,
-          "durationMs": 0
+          "durationMs": 1
         },
         {
           "id": "T2.10.4",
@@ -997,7 +997,7 @@
           "description": "Pre-release semantic tags (v0.10.0-rc1) are marked pre-release",
           "status": "PASSED",
           "error": null,
-          "durationMs": 1
+          "durationMs": 0
         },
         {
           "id": "T2.13.1",
@@ -1060,7 +1060,7 @@
           "description": "0-byte input files in file parsers handle EOF cleanly without memory faults",
           "status": "PASSED",
           "error": null,
-          "durationMs": 0
+          "durationMs": 1
         },
         {
           "id": "T2.14.5",
@@ -1095,7 +1095,7 @@
           "description": "Memory consumption during idle home screen stays below 500MB RSS",
           "status": "PASSED",
           "error": null,
-          "durationMs": 1
+          "durationMs": 0
         },
         {
           "id": "T2.15.5",
@@ -1148,7 +1148,7 @@
       "cases": [
         {
           "id": "C1",
-          "description": "OpenAI Provider (F5) + Slides AI Generator (F7) + Rebranded Glyphs (F3)",
+          "description": "OpenAI Provider (F5) + Slides AI Generator (F7) + sOffice Brand Glyphs (F3)",
           "status": "PASSED",
           "error": null,
           "durationMs": 0
@@ -1214,7 +1214,7 @@
           "description": "Workflow Scenario 2: End-to-End AI Configuration & BYOK Activation",
           "status": "PASSED",
           "error": null,
-          "durationMs": 1
+          "durationMs": 0
         },
         {
           "id": "S3",
@@ -1228,7 +1228,7 @@
           "description": "Workflow Scenario 4: Complete Distribution & Release Integrity Audit",
           "status": "PASSED",
           "error": null,
-          "durationMs": 0
+          "durationMs": 1
         }
       ]
     }

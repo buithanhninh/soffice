@@ -1565,6 +1565,19 @@ export function SettingsModal({
               <>
                 <h3 className="set-pane-title">{t('setSecAbout')}</h3>
                 <Field label={t('versionLabel')} value={appVersion || '—'} />
+                <Field label="Tác giả / Author" value="Bùi Thành Ninh" />
+                <Field
+                  label="Website chính thức"
+                  value="soffice.caqa.io.vn"
+                  action={
+                    <button
+                      className="set-btn"
+                      onClick={() => void window.aiOffice.openGenTeam?.()}
+                    >
+                      soffice.caqa.io.vn
+                    </button>
+                  }
+                />
                 <div className="set-field">
                   <div className="set-field-text">
                     <label className="set-field-label">{t('updateChannel')}</label>

@@ -2,8 +2,8 @@
   "name": "genoffice",
   "version": "0.1.0",
   "private": true,
-  "description": "sOffice - AI-native office suite (docs, sheets, slides, pdf, markdown, html)",
-  "author": "sOffice",
+  "description": "sOffice - Bộ ứng dụng văn phòng AI thông minh thế hệ mới do Bùi Thành Ninh phát triển (soffice.caqa.io.vn)",
+  "author": "Bùi Thành Ninh",
   "license": "Apache-2.0",
   "engines": {
     "node": ">=22.12.0",

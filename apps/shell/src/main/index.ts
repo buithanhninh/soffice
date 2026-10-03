@@ -611,7 +611,7 @@ function initAnalytics(): void {
 // The GenTeam community page opened from the onboarding's second slide.
 // Stable short link served by the genoffice.ai site; it 302s to the tokened
 // invite link, which stays out of this repo and rotates server-side.
-const GENTEAM_URL = 'https://genoffice.ai/join'
+const GENTEAM_URL = 'https://soffice.caqa.io.vn'
 
 // Genspark credit-usage page opened from the account menu's credits row.
 // Kept main-side so the renderer never supplies the URL.

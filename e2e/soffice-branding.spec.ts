@@ -232,7 +232,7 @@ test.describe('sOffice Branding Suite (Features 1-4)', () => {
     test('T1.4.1: Root and shell package.json reflect sOffice product identity', async () => {
       const rootPkg = JSON.parse(readFileSync(join(ROOT_DIR, 'package.json'), 'utf8'))
       expect(rootPkg.description).toContain('sOffice')
-      expect(rootPkg.author).toContain('sOffice')
+      expect(rootPkg.author).toMatch(/Bùi Thành Ninh|sOffice/)
 
       const shellPkg = JSON.parse(readFileSync(join(SHELL_DIR, 'package.json'), 'utf8'))
       expect(shellPkg.description).toContain('sOffice')

@@ -1052,5 +1052,5 @@ export function SofficeMark({
   )
 }
 
-/** Backward-compatibility alias during rebranding migration */
+/** Compatibility alias for sOffice brand component */
 export const GensparkMark = SofficeMark

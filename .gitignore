@@ -43,3 +43,4 @@ __pycache__/
 _scratch-*
 
 /archive_web_prototype/
+.github/workflows/

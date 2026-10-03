@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "license": "Apache-2.0",
   "private": true,
-  "description": "AI-native streaming docx editor with paragraph-patch save",
+  "description": "sOffice Docs - Trình soạn thảo văn bản AI thông minh (.docx, .pdf, .html, .md)",
   "main": "out/main/index.js",
   "scripts": {
     "dev": "electron-vite dev",
@@ -47,7 +47,7 @@
     "vite": "^7.3.1",
     "vitest": "^4.1.11"
   },
-  "author": "sOffice",
+  "author": "Bùi Thành Ninh",
   "build": {
     "appId": "com.soffice.docs",
     "productName": "sOffice Docs",

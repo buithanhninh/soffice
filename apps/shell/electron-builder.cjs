@@ -536,8 +536,11 @@ const config = {
         arch: [winArch],
       },
     ],
+    nsis: {
+      artifactName: 'sOffice-Setup-${version}.${ext}',
+    },
     portable: {
-      artifactName: 'sOffice-${version}-Portable.${ext}',
+      artifactName: 'sOffice-Portable-${version}.${ext}',
     },
     extraResources: [
       {
@@ -573,8 +576,8 @@ const config = {
     // so apt sees the new packages as the same lineage. Homepage comes from
     // package.json "homepage"; the Package field is pinned in the deb block
     // below (packageName is a per-target option, rejected here by the schema).
-    maintainer: 'sOffice Team <support@soffice.caqa.io.vn>',
-    vendor: 'sOffice',
+    maintainer: 'Bùi Thành Ninh <support@soffice.caqa.io.vn>',
+    vendor: 'Bùi Thành Ninh',
     category: 'Office',
     // Icon SET directory, not the single 1024px png: electron-builder does
     // not resize a lone png, so deb/rpm would install only

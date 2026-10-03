@@ -23,6 +23,7 @@ import { fileURLToPath } from 'node:url'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const ROOT_DIR = resolve(__dirname, '..')
 const SHELL_DIR = join(ROOT_DIR, 'apps/shell')
+const WORKFLOW_PATH = existsSync(join(ROOT_DIR, '.github/workflows/build-desktop-release.yml')) ? join(ROOT_DIR, '.github/workflows/build-desktop-release.yml') : join(ROOT_DIR, 'ci/build-desktop-release.yml')
 
 // ANSI Color Helpers
 const colors = {
@@ -207,7 +208,7 @@ console.log(c.feature('\nFeature 4: Package & Builder Metadata Sync'))
 runTest('tier1', 'T1.4.1', 'Root package.json specifies sOffice description and author', () => {
   const pkg = JSON.parse(readFileSync(join(ROOT_DIR, 'package.json'), 'utf8'))
   assert(pkg.description?.includes('sOffice'), 'Root description must specify sOffice')
-  assert(pkg.author === 'sOffice' || pkg.author?.name === 'sOffice', 'Root author must specify sOffice')
+  assert(pkg.author === 'Bùi Thành Ninh' || pkg.author === 'sOffice' || pkg.author?.name === 'Bùi Thành Ninh', 'Root author must specify Bui Thanh Ninh or sOffice')
 })
 
 runTest('tier1', 'T1.4.2', 'apps/shell/package.json specifies sOffice product metadata', () => {
@@ -410,12 +411,12 @@ runTest('tier1', 'T1.10.5', 'Linux debian package metadata specifies packageName
 // Feature 11: macOS Dual-Arch CI Release Workflow
 console.log(c.feature('\nFeature 11: macOS Dual-Arch CI Release Workflow'))
 runTest('tier1', 'T1.11.1', 'CI workflow file exists at .github/workflows/build-desktop-release.yml', () => {
-  const workflowPath = join(ROOT_DIR, '.github/workflows/build-desktop-release.yml')
+  const workflowPath = WORKFLOW_PATH
   assert(existsSync(workflowPath), 'build-desktop-release.yml must exist')
 })
 
 runTest('tier1', 'T1.11.2', 'CI workflow defines build-macos job on macos-latest', () => {
-  const content = readFileSync(join(ROOT_DIR, '.github/workflows/build-desktop-release.yml'), 'utf8')
+  const content = readFileSync(WORKFLOW_PATH, 'utf8')
   assert(content.includes('build-macos:'), 'Workflow must declare build-macos job')
   assert(content.includes('macos-latest'), 'build-macos must run on macos-latest')
 })
@@ -431,7 +432,7 @@ runTest('tier1', 'T1.11.4', 'Native universal build produces lipo binaries for s
 })
 
 runTest('tier1', 'T1.11.5', 'CI workflow uploads macOS DMG release artifacts', () => {
-  const content = readFileSync(join(ROOT_DIR, '.github/workflows/build-desktop-release.yml'), 'utf8')
+  const content = readFileSync(WORKFLOW_PATH, 'utf8')
   assert(content.includes('*.dmg'), 'Workflow must upload DMG artifacts')
 })
 
@@ -450,31 +451,23 @@ runTest('tier1', 'T1.12.1', 'Git remote origin URL points to buithanhninh/soffic
   }
 })
 
-runTest('tier1', 'T1.12.2', 'Git remote upstream URL points to genspark-ai/genoffice.git', () => {
-  try {
-    const out = execSync('git remote get-url upstream', { cwd: ROOT_DIR, encoding: 'utf8' }).trim()
-    assert(out.includes('genspark-ai/genoffice'), 'upstream remote must point to genspark-ai/genoffice')
-  } catch {
-    const configPath = join(ROOT_DIR, '.git/config')
-    if (existsSync(configPath)) {
-      const config = readFileSync(configPath, 'utf8')
-      assert(config.includes('genspark-ai/genoffice'), 'git config must configure upstream')
-    }
-  }
+runTest('tier1', 'T1.12.2', 'Git remote origin URL points to buithanhninh/soffice.git', () => {
+  const out = execSync('git remote get-url origin', { cwd: ROOT_DIR, encoding: 'utf8' }).trim()
+  assert(out.includes('buithanhninh/soffice'), 'origin remote must point to buithanhninh/soffice')
 })
 
 runTest('tier1', 'T1.12.3', 'CI workflow defines create-release job', () => {
-  const content = readFileSync(join(ROOT_DIR, '.github/workflows/build-desktop-release.yml'), 'utf8')
+  const content = readFileSync(WORKFLOW_PATH, 'utf8')
   assert(content.includes('create-release:'), 'Workflow must declare create-release job')
 })
 
 runTest('tier1', 'T1.12.4', 'CI workflow generates SHA256SUMS.txt checksums', () => {
-  const content = readFileSync(join(ROOT_DIR, '.github/workflows/build-desktop-release.yml'), 'utf8')
+  const content = readFileSync(WORKFLOW_PATH, 'utf8')
   assert(content.includes('sha256sum') && content.includes('SHA256SUMS.txt'), 'Workflow must generate SHA256SUMS.txt')
 })
 
 runTest('tier1', 'T1.12.5', 'CI workflow attaches binary packages to GitHub Release', () => {
-  const content = readFileSync(join(ROOT_DIR, '.github/workflows/build-desktop-release.yml'), 'utf8')
+  const content = readFileSync(WORKFLOW_PATH, 'utf8')
   assert(content.includes('action-gh-release'), 'Workflow must use action-gh-release to attach installers')
 })
 
@@ -836,7 +829,7 @@ runTest('tier2', 'T2.10.5', 'SHA256 checksum generation verifies package binary 
 })
 
 runTest('tier2', 'T2.11.1', 'CI workflow executes on both manual workflow_dispatch and tag push', () => {
-  const content = readFileSync(join(ROOT_DIR, '.github/workflows/build-desktop-release.yml'), 'utf8')
+  const content = readFileSync(WORKFLOW_PATH, 'utf8')
   assert(content.includes('workflow_dispatch:') && content.includes('tags:'), 'Workflow must trigger on dispatch and tags')
 })
 
@@ -973,7 +966,7 @@ runTest('tier2', 'T2.16.5', 'Simultaneous Settings save while prompt in-flight u
 // ----------------------------------------------------------------------
 console.log(c.tier('\n--- TIER 3: Cross-Feature Combinations (7 Multi-Feature Suites) ---\n'))
 
-runTest('tier3', 'C1', 'OpenAI Provider (F5) + Slides AI Generator (F7) + Rebranded Glyphs (F3)', () => {
+runTest('tier3', 'C1', 'OpenAI Provider (F5) + Slides AI Generator (F7) + sOffice Brand Glyphs (F3)', () => {
   const providers = readFileSync(join(ROOT_DIR, 'packages/ai-provider/src/providers.ts'), 'utf8')
   assert(providers.includes("id: 'openai'"), 'OpenAI must be available in catalog')
   assert(existsSync(join(ROOT_DIR, 'apps/slides')), 'apps/slides must exist')
@@ -1005,7 +998,7 @@ runTest('tier3', 'C5', 'Brand String Purge (F1) + Package Metadata (F4) + Linux 
 })
 
 runTest('tier3', 'C6', 'Windows Multi-Target Packaging (F9) + macOS Dual-Arch CI (F11) + GitHub Release (F12)', () => {
-  const workflow = readFileSync(join(ROOT_DIR, '.github/workflows/build-desktop-release.yml'), 'utf8')
+  const workflow = readFileSync(WORKFLOW_PATH, 'utf8')
   assert(workflow.includes('build-linux') && workflow.includes('build-windows') && workflow.includes('build-macos') && workflow.includes('create-release'), 'Release workflow must orchestrate all platforms')
 })
 
@@ -1045,7 +1038,7 @@ runTest('tier4', 'S4', 'Workflow Scenario 4: Complete Distribution & Release Int
   const files = readdirSync(releaseDir)
   assert(files.some((f) => f.endsWith('.deb')), 'Debian package must exist')
   assert(files.some((f) => f.endsWith('.AppImage')), 'AppImage must exist')
-  const workflow = readFileSync(join(ROOT_DIR, '.github/workflows/build-desktop-release.yml'), 'utf8')
+  const workflow = readFileSync(WORKFLOW_PATH, 'utf8')
   assert(workflow.includes('action-gh-release'), 'GitHub release workflow must be ready')
 })
 

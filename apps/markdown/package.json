@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "license": "Apache-2.0",
   "private": true,
-  "description": "Markdown editor module: TipTap block editor over plain .md files, hosted by shell tabs",
+  "description": "sOffice Markdown - Trình soạn thảo Markdown AI thông minh",
   "main": "out/main/index.js",
   "scripts": {
     "dev": "electron-vite dev",
@@ -52,7 +52,7 @@
     "vite": "^7.3.1",
     "vitest": "^4.1.11"
   },
-  "author": "GenOffice",
+  "author": "Bùi Thành Ninh",
   "dependencies": {
     "@tiptap/extension-mathematics": "3.31.0",
     "katex": "^0.16.47",

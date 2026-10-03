@@ -36,5 +36,6 @@
   "dependencies": {
     "@genoffice/i18n": "*",
     "@genoffice/pptx-render": "*"
-  }
+  },
+  "author": "Bùi Thành Ninh"
 }

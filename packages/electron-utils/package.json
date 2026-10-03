@@ -26,5 +26,6 @@
   },
   "dependencies": {
     "parse5": "^8.0.1"
-  }
+  },
+  "author": "Bùi Thành Ninh"
 }
