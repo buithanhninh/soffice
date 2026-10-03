@@ -97,7 +97,8 @@ export interface AppLaunch {
 
 /** How to start the GenOffice GUI: the app binary that hosts this CLI, an installed app, or the dev checkout. */
 export function appLaunch(env: NodeJS.ProcessEnv = process.env): AppLaunch | null {
-  if (env.GENOFFICE_APP_BIN) return { command: env.GENOFFICE_APP_BIN, args: [] }
+  const bin = env.SOFFICE_APP_BIN || env.GENOFFICE_APP_BIN
+  if (bin) return { command: bin, args: [] }
   if (packagedResourcesDir() && process.versions.electron) {
     return { command: process.execPath, args: [] }
   }
@@ -116,16 +117,20 @@ function installedAppBinaries(env: NodeJS.ProcessEnv): string[] {
   switch (process.platform) {
     case 'darwin':
       return [
+        '/Applications/sOffice.app/Contents/MacOS/sOffice',
+        join(homedir(), 'Applications/sOffice.app/Contents/MacOS/sOffice'),
         '/Applications/GenOffice.app/Contents/MacOS/GenOffice',
         join(homedir(), 'Applications/GenOffice.app/Contents/MacOS/GenOffice'),
       ]
     case 'win32':
       return [
+        env.LOCALAPPDATA ? join(env.LOCALAPPDATA, 'Programs', 'sOffice', 'sOffice.exe') : '',
+        env.ProgramFiles ? join(env.ProgramFiles, 'sOffice', 'sOffice.exe') : '',
         env.LOCALAPPDATA ? join(env.LOCALAPPDATA, 'Programs', 'GenOffice', 'GenOffice.exe') : '',
         env.ProgramFiles ? join(env.ProgramFiles, 'GenOffice', 'GenOffice.exe') : '',
       ].filter(Boolean)
     default:
-      return ['/opt/GenOffice/genoffice', '/usr/bin/genoffice']
+      return ['/opt/sOffice/soffice', '/usr/bin/soffice', '/opt/GenOffice/genoffice', '/usr/bin/genoffice']
   }
 }
 

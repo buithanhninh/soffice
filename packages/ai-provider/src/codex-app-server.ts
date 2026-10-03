@@ -441,7 +441,7 @@ class CodexAppServerClient {
 
   private async initialize(): Promise<void> {
     await this.requestWire('initialize', {
-      clientInfo: { name: 'genoffice', title: 'GenOffice', version: '0.1.0' },
+      clientInfo: { name: 'soffice', title: 'sOffice', version: '0.1.0' },
       capabilities: { experimentalApi: false, requestAttestation: false },
     })
     this.notify('initialized')

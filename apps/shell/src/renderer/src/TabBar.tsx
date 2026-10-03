@@ -285,6 +285,7 @@ export function TabBar() {
       )}
       <div className={dragVisual ? 'tab-strip dragging' : 'tab-strip'} ref={stripRef}>
         {tabs.map((tab, index) => {
+          const displayTitle = tab.id === 'home' || tab.title === 'GenOffice' ? 'sOffice' : tab.title
           // live transforms: the grabbed tab tracks the pointer; tabs between
           // the origin and the current target slide aside by the grabbed width
           let dragStyle: CSSProperties | undefined
@@ -303,7 +304,7 @@ export function TabBar() {
               className={`tab-item ${tab.kind === 'home' ? 'tab-home' : ''} ${tab.active ? 'active' : ''} ${dragVisual?.id === tab.id ? 'drag-source' : ''}`}
               // long file names ellipsize in the strip — hover reveals the
               // full title (the close button's own tooltip still wins there)
-              title={tab.title}
+              title={displayTitle}
               style={dragStyle}
               onContextMenu={(event) => {
                 event.preventDefault()
@@ -437,7 +438,7 @@ export function TabBar() {
                     setRenaming({ id: tab.id, value: base })
                   }}
                 >
-                  {tab.title}
+                  {displayTitle}
                 </span>
               )}
               {tab.closable && (

@@ -8,10 +8,12 @@ import { run } from './helpers'
 describe('cloud command plumbing', () => {
   it('locates the shell ai-settings.json without Electron and honours the override', () => {
     expect(aiSettingsPath({ GENOFFICE_AI_SETTINGS: '/x/ai.json' })).toBe('/x/ai.json')
+    expect(aiSettingsPath({ SOFFICE_AI_SETTINGS: '/x/ai2.json' })).toBe('/x/ai2.json')
     const p = aiSettingsPath({})
-    expect(p.endsWith(join('GenOffice', 'ai-settings.json'))).toBe(true)
+    expect(p.endsWith(join('sOffice', 'ai-settings.json')) || p.endsWith(join('GenOffice', 'ai-settings.json'))).toBe(true)
     if (process.platform === 'darwin') expect(p).toContain('Library/Application Support')
     expect(aiSettingsPath({ GENOFFICE_USER_DATA: '/ud' })).toBe(join('/ud', 'ai-settings.json'))
+    expect(aiSettingsPath({ SOFFICE_USER_DATA: '/ud2' })).toBe(join('/ud2', 'ai-settings.json'))
   })
 
   it('picks the first http(s) proxy variable and ignores socks', () => {

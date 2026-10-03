@@ -4,7 +4,8 @@
   "license": "Apache-2.0",
   "private": true,
   "type": "module",
-  "description": "genoffice: the GenOffice command line (create, convert, read, edit and render documents) built on the same engines as the app; runs headless on the app's bundled Node runtime",
+  "description": "genoffice: the sOffice command line (create, convert, read, edit and render documents) built on the same engines as the app; runs headless on the app's bundled Node runtime",
+  "author": "sOffice",
   "exports": {
     ".": "./src/index.ts",
     "./install": "./src/install.ts",

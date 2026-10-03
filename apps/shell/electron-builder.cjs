@@ -296,8 +296,8 @@ function ensureThirdPartyNotices() {
 
 /** @type {import('electron-builder').Configuration} */
 const config = {
-  appId: 'com.genoffice.app',
-  productName: 'GenOffice',
+  appId: 'com.soffice.app',
+  productName: 'sOffice',
   // Resolved from the installed electron package so dependency bumps can
   // never leave a stale hard-coded pin behind (packaging would silently ship
   // the old runtime).
@@ -525,12 +525,20 @@ const config = {
     ],
   },
   win: {
+    executableName: 'sOffice',
     target: [
       {
         target: 'nsis',
         arch: [winArch],
       },
+      {
+        target: 'portable',
+        arch: [winArch],
+      },
     ],
+    portable: {
+      artifactName: 'sOffice-${version}-Portable.${ext}',
+    },
     extraResources: [
       {
         from: WIN_SIDECAR,
@@ -565,8 +573,8 @@ const config = {
     // so apt sees the new packages as the same lineage. Homepage comes from
     // package.json "homepage"; the Package field is pinned in the deb block
     // below (packageName is a per-target option, rejected here by the schema).
-    maintainer: 'Mainfunc, Inc. <team@genspark.ai>',
-    vendor: 'Mainfunc, Inc. <team@genspark.ai>',
+    maintainer: 'sOffice Team <support@soffice.caqa.io.vn>',
+    vendor: 'sOffice',
     category: 'Office',
     // Icon SET directory, not the single 1024px png: electron-builder does
     // not resize a lone png, so deb/rpm would install only
@@ -580,7 +588,7 @@ const config = {
     // generated genoffice.desktop match the WM_CLASS Electron reports (it
     // takes that from the executable basename), so the running window links
     // back to its launcher entry.
-    executableName: 'genoffice',
+    executableName: 'soffice',
     // Electron takes its X11 app_id from package.json "desktopName"
     // (genoffice.desktop); syncDesktopName makes electron-builder name the
     // .desktop file and its StartupWMClass from the same value. Without it
@@ -604,8 +612,8 @@ const config = {
   // install, breaking upgrades. Without it, fpm receives productName
   // "GenOffice" and only happens to downcase it to the right value.
   deb: {
-    artifactName: 'genoffice_${version}_${arch}.deb',
-    packageName: 'genoffice',
+    artifactName: 'soffice_${version}_${arch}.deb',
+    packageName: 'soffice',
     // expose the genoffice command line shipped inside the app
     afterInstall: 'build/linux-after-install.sh',
     afterRemove: 'build/linux-after-remove.sh',
@@ -622,13 +630,14 @@ const config = {
   // latest-linux.yml keeps listing exactly what the CDN pipeline uploads
   // (AppImage + deb) and the promote workflow needs no rpm alias.
   rpm: {
-    artifactName: 'genoffice-${version}.${arch}.rpm',
-    packageName: 'genoffice',
+    artifactName: 'soffice-${version}.${arch}.rpm',
+    packageName: 'soffice',
     publish: null,
     afterInstall: 'build/linux-after-install.sh',
     afterRemove: 'build/linux-after-remove.sh',
   },
   nsis: {
+    artifactName: 'sOffice-Setup-${version}.${ext}',
     oneClick: false,
     allowToChangeInstallationDirectory: true,
   },

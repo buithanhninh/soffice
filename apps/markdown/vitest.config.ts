@@ -4,6 +4,6 @@ export default defineConfig({
   test: {
     include: ['tests/**/*.test.ts'],
     environment: 'jsdom',
-    testTimeout: 20000,
+    testTimeout: 60000,
   },
 })

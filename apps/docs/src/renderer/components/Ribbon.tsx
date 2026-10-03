@@ -82,7 +82,7 @@ import {
 import { WRAP_OPTIONS } from './ContextMenu'
 import { CropDialog, CutoutDialog } from './PictureDialogs'
 import {
-  GensparkMark,
+  SofficeMark, GensparkMark,
   IconAlignCenter,
   IconAlignJustify,
   IconAlignLeft,
@@ -2858,9 +2858,9 @@ function RibbonInner({
                   onClick={onToggleAi}
                 >
                   <span className="rb-big-icon">
-                    <GensparkMark size={26} />
+                    <SofficeMark size={26} />
                   </span>
-                  <span>Genspark AI</span>
+                  <span>sOffice AI</span>
                 </button>
                 <button
                   className="rb-big ai-entry"
@@ -2960,7 +2960,7 @@ function RibbonInner({
                   <span>{t('aiTidyBtn')}</span>
                 </button>
               </div>
-              <div className="ribbon-group-label">Genspark AI</div>
+              <div className="ribbon-group-label">sOffice AI</div>
             </div>
 
             <div className="ribbon-sep" />

@@ -1,0 +1,126 @@
+name: Build sOffice Desktop Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Release version (e.g. 1.0.0)'
+        required: false
+        default: '1.0.0'
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  build-linux:
+    name: Build Linux (.AppImage & .deb)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Install system dependencies
+        run: sudo apt-get update && sudo apt-get install -y rpm libxml2-utils
+      - name: Install npm dependencies
+        run: npm ci
+      - name: Build Rust xlsx-sidecar
+        run: cargo build --release --manifest-path apps/sheets/native/xlsx-engine/Cargo.toml
+      - name: Build all modules
+        run: npm run build:all
+      - name: Package Linux
+        run: npm run dist:linux -w @genoffice/shell
+      - name: Upload Linux Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: sOffice-Linux
+          path: |
+            apps/shell/release/*.AppImage
+            apps/shell/release/*.deb
+            apps/shell/release/*.rpm
+
+  build-windows:
+    name: Build Windows (.exe Installer)
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: x86_64-pc-windows-msvc
+      - name: Install npm dependencies
+        run: npm ci
+      - name: Build Rust xlsx-sidecar (Windows)
+        run: cargo build --release --manifest-path apps/sheets/native/xlsx-engine/Cargo.toml --target x86_64-pc-windows-msvc
+      - name: Build all modules
+        run: npm run build:all
+      - name: Package Windows
+        run: npm run dist:win -w @genoffice/shell
+      - name: Upload Windows Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: sOffice-Windows
+          path: apps/shell/release/*.exe
+
+  build-macos:
+    name: Build macOS (.dmg)
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: aarch64-apple-darwin, x86_64-apple-darwin
+      - name: Install npm dependencies
+        run: npm ci
+      - name: Build Universal Rust xlsx-sidecar
+        run: npm run native:build:universal -w @genoffice/sheets
+      - name: Build all modules
+        run: npm run build:all
+      - name: Package macOS
+        run: npm run dist:mac -w @genoffice/shell
+      - name: Upload macOS Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: sOffice-macOS
+          path: |
+            apps/shell/release/*.dmg
+            apps/shell/release/*.zip
+
+  create-release:
+    name: Publish GitHub Release
+    needs: [build-linux, build-windows, build-macos]
+    if: startsWith(github.ref, 'refs/tags/') || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: release-artifacts
+      - name: Generate Checksums
+        run: |
+          cd release-artifacts
+          find . -type f \( -name "*.AppImage" -o -name "*.deb" -o -name "*.exe" -o -name "*.dmg" -o -name "*.rpm" \) -exec sha256sum {} + > SHA256SUMS.txt
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: sOffice Desktop ${{ github.ref_name || inputs.version }}
+          draft: false
+          prerelease: false
+          files: |
+            release-artifacts/**/*.AppImage
+            release-artifacts/**/*.deb
+            release-artifacts/**/*.exe
+            release-artifacts/**/*.dmg
+            release-artifacts/**/*.rpm
+            release-artifacts/SHA256SUMS.txt

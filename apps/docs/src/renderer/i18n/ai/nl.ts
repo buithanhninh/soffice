@@ -8,8 +8,8 @@ export const nl = {
   aiStarterPolishAll: 'Werk het hele document bij naar een professionelere toon',
   aiStarterContinue: 'Schrijf verder waar het document ophoudt',
   aiStarterFillTemplate: 'Zoek en vul de tijdelijke aanduidingen in het document in',
-  aiGskLoginBtn: 'Aanmelden bij Genspark',
-  aiPanelTitle: 'Genspark',
+  aiGskLoginBtn: 'Inloggen met sOffice',
+  aiPanelTitle: 'sAI',
   aiOpenAssistant: 'AI-assistent openen',
   aiSummarizeBtn: 'AI-samenvatting',
   aiSummarizePrompt: 'Vat de hoofdinhoud en kernpunten van dit document samen',
@@ -117,7 +117,7 @@ export const nl = {
   aiNetworkError:
     'Netwerkprobleem: kan de AI-service niet bereiken. Controleer je verbinding en probeer het opnieuw',
   aiCreditsExhausted:
-    'Je Genspark-credits zijn op. Waardeer op via genspark.ai/pricing en probeer het opnieuw',
+    'Je sOffice AI-credits zijn op. Controleer je account of API-sleutelinstellingen en probeer het opnieuw',
   aiSumReadAttachment: 'Bijlage lezen',
   aiSumImageAttachment: 'Afbeeldingsbijlage {name}',
   aiSumRead: '{name} lezen',

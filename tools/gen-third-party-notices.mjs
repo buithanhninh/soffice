@@ -207,7 +207,7 @@ function rustCrates() {
   try {
     const raw = execFileSync(
       'cargo',
-      ['metadata', '--format-version', '1', '--manifest-path', target],
+      ['metadata', '--offline', '--format-version', '1', '--manifest-path', target],
       { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024, stdio: ['ignore', 'pipe', 'ignore'] },
     )
     return JSON.parse(raw)
@@ -232,7 +232,7 @@ const seed = importedNames()
 const { resolved, missing } = closure(seed)
 resolved.sort(([a], [b]) => a.localeCompare(b))
 
-let out = `GenOffice — Third-Party Software Notices
+let out = `sOffice — Third-Party Software Notices
 
 This application includes third-party software components under the licenses
 reproduced below.

@@ -39,8 +39,8 @@ export async function exportViaApp(
   const env = opts.env ?? process.env
   const launch = appLaunch(env)
   if (!launch) {
-    throw new CliError(EXIT.app, 'GenOffice app not found (needed for this conversion)', {
-      hint: 'install GenOffice, or set GENOFFICE_APP_BIN to its executable',
+    throw new CliError(EXIT.app, 'sOffice app not found (needed for this conversion)', {
+      hint: 'install sOffice, or set SOFFICE_APP_BIN to its executable',
     })
   }
   const args = [
@@ -55,7 +55,7 @@ export async function exportViaApp(
   ]
   const childEnv = { ...env }
   delete childEnv.ELECTRON_RUN_AS_NODE
-  opts.log?.(`starting GenOffice for ${target} export`)
+  opts.log?.(`starting sOffice for ${target} export`)
   const spawn = opts.spawn ?? nodeSpawn
   const child = spawn(launch.command, args, { env: childEnv, stdio: ['ignore', 'pipe', 'pipe'] })
   const { code, stdout, stderr, timedOut } = await waitFor(

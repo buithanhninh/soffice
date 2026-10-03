@@ -18,10 +18,15 @@ if [ -n "$GENOFFICE_NODE" ]; then
 fi
 
 case "$here" in
-  */Contents/Resources/cli) app="$here/../../MacOS/GenOffice" ;;
+  */Contents/Resources/cli)
+    if [ -x "$here/../../MacOS/sOffice" ]; then app="$here/../../MacOS/sOffice"; else app="$here/../../MacOS/GenOffice"; fi
+    ;;
   */resources/cli)
     # Linux install, or the Windows install reached from Git Bash / MSYS
-    if [ -x "$here/../../GenOffice.exe" ]; then app="$here/../../GenOffice.exe"; else app="$here/../../genoffice"; fi
+    if [ -x "$here/../../sOffice.exe" ]; then app="$here/../../sOffice.exe"
+    elif [ -x "$here/../../GenOffice.exe" ]; then app="$here/../../GenOffice.exe"
+    elif [ -x "$here/../../soffice" ]; then app="$here/../../soffice"
+    else app="$here/../../genoffice"; fi
     ;;
   *) app="" ;;
 esac

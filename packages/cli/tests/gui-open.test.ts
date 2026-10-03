@@ -31,7 +31,9 @@ async function workbook(dir: string): Promise<string> {
 describe('GUI-open documents', () => {
   it('locates the shell userData directory and honours the override', () => {
     expect(genofficeUserDataDir({ GENOFFICE_USER_DATA: '/u' })).toBe('/u')
-    expect(genofficeUserDataDir({}).endsWith('GenOffice')).toBe(true)
+    expect(genofficeUserDataDir({ SOFFICE_USER_DATA: '/u2' })).toBe('/u2')
+    const dir = genofficeUserDataDir({})
+    expect(dir.endsWith('sOffice') || dir.endsWith('GenOffice')).toBe(true)
   })
 
   it('ignores a missing, malformed or crash-leftover registry', () => {

@@ -200,9 +200,9 @@ export function defaultAiMediaSettings(): AiMediaSettings {
     }
   }
   return {
-    imageProvider: 'genspark',
-    analysisProvider: 'genspark',
-    videoAnalysisProvider: 'genspark',
+    imageProvider: 'openai',
+    analysisProvider: 'gemini',
+    videoAnalysisProvider: 'gemini',
     providers,
   }
 }

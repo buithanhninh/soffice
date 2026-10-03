@@ -311,7 +311,8 @@ export const strings = {
     aiTimeoutError: 'AI 请求超时：网络长时间无响应，已停止。请检查网络后重试',
     aiOverloadedError: 'AI 服务当前繁忙，请稍后重试',
     aiNetworkError: '网络有问题，无法连接 AI 服务。请检查网络后重试',
-    aiCreditsExhausted: 'Genspark 积分已用完，请前往 genspark.ai/pricing 充值后重试',
+    aiCreditsExhausted:
+    'sOffice AI 积分已用完，请检查账号或 API Key 设置后重试',
     aiToolReadPages: '读取第 {start}-{end} 页',
     aiToolSearch: '搜索"{query}"（{count} 处）',
     aiToolGoto: '跳转到第 {page} 页',
@@ -474,7 +475,7 @@ export const strings = {
     removeStamp: '点击选中此水印/页眉页脚',
     props: '属性',
     propsTitle: '文档属性',
-    ribbonAiAssistant: 'Genspark',
+    ribbonAiAssistant: 'sAI',
     ribbonAiAssistantTip: '打开 AI 助手',
     propTitle: '标题',
     propAuthor: '作者',
@@ -642,7 +643,7 @@ export const strings = {
     aiNetworkError:
       'Network problem: could not reach the AI service. Check your connection and try again',
     aiCreditsExhausted:
-      'Your Genspark credits have run out. Visit genspark.ai/pricing to top up, then try again',
+    'Your sOffice AI credits have run out. Please check your account or API key settings, then try again',
     aiToolReadPages: 'Read pages {start}-{end}',
     aiToolSearch: 'Search "{query}" ({count} hits)',
     aiToolGoto: 'Go to page {page}',
@@ -809,7 +810,7 @@ export const strings = {
     removeStamp: 'Click to select this watermark / header / footer',
     props: 'Properties',
     propsTitle: 'Document properties',
-    ribbonAiAssistant: 'Genspark',
+    ribbonAiAssistant: 'sAI',
     ribbonAiAssistantTip: 'Open the AI assistant',
     propTitle: 'Title',
     propAuthor: 'Author',
@@ -976,7 +977,7 @@ export const strings = {
     aiNetworkError:
       'ネットワークに問題があり、AI サービスに接続できません。接続を確認して再試行してください',
     aiCreditsExhausted:
-      'Gensparkクレジットを使い切りました。genspark.ai/pricing でチャージしてから再試行してください',
+    'sOffice AI クレジットを使い切りました。アカウントまたは API キー設定を確認して再試行してください',
     aiToolReadPages: 'ページ {start}-{end} を読む',
     aiToolSearch: '「{query}」を検索（{count} 件）',
     aiToolGoto: 'ページ {page} へ移動',
@@ -1144,7 +1145,7 @@ export const strings = {
     removeStamp: 'クリックでこの透かし/ヘッダーを選択',
     props: 'プロパティ',
     propsTitle: '文書のプロパティ',
-    ribbonAiAssistant: 'Genspark',
+    ribbonAiAssistant: 'sAI',
     ribbonAiAssistantTip: 'AI アシスタントを開く',
     propTitle: 'タイトル',
     propAuthor: '作成者',
@@ -1312,7 +1313,7 @@ export const strings = {
     aiNetworkError:
       '네트워크에 문제가 있어 AI 서비스에 연결할 수 없습니다. 연결을 확인한 후 다시 시도해 주세요',
     aiCreditsExhausted:
-      'Genspark 크레딧을 모두 사용했습니다. genspark.ai/pricing에서 충전한 후 다시 시도해 주세요',
+    'sOffice AI 크레딧을 모두 사용했습니다. 계정 또는 API 키 설정을 확인한 후 다시 시도해 주세요',
     aiToolReadPages: '{start}-{end}쪽 읽기',
     aiToolSearch: '"{query}" 검색 ({count}건)',
     aiToolGoto: '{page}쪽으로 이동',
@@ -1478,7 +1479,7 @@ export const strings = {
     removeStamp: '클릭하여 이 워터마크/머리글 선택',
     props: '속성',
     propsTitle: '문서 속성',
-    ribbonAiAssistant: 'Genspark',
+    ribbonAiAssistant: 'sAI',
     ribbonAiAssistantTip: 'AI 도우미 열기',
     propTitle: '제목',
     propAuthor: '작성자',
@@ -1650,7 +1651,7 @@ export const strings = {
     aiNetworkError:
       'Problème réseau : impossible de joindre le service IA. Vérifiez votre connexion et réessayez',
     aiCreditsExhausted:
-      'Vos crédits Genspark sont épuisés. Rechargez sur genspark.ai/pricing puis réessayez',
+    'Vos crédits sOffice IA sont épuisés. Vérifiez votre compte ou vos paramètres de clé API, puis réessayez',
     aiToolReadPages: 'Lire les pages {start}-{end}',
     aiToolSearch: 'Rechercher « {query} » ({count} occurrences)',
     aiToolGoto: 'Aller à la page {page}',
@@ -1821,7 +1822,7 @@ export const strings = {
     removeStamp: 'Cliquer pour sélectionner ce filigrane / en-tête',
     props: 'Propriétés',
     propsTitle: 'Propriétés du document',
-    ribbonAiAssistant: 'Genspark',
+    ribbonAiAssistant: 'sAI',
     ribbonAiAssistantTip: "Ouvrir l'assistant IA",
     propTitle: 'Titre',
     propAuthor: 'Auteur',
@@ -1992,7 +1993,7 @@ export const strings = {
     aiNetworkError:
       'Netzwerkproblem: Der KI-Dienst ist nicht erreichbar. Prüfe deine Verbindung und versuche es erneut',
     aiCreditsExhausted:
-      'Deine Genspark-Credits sind aufgebraucht. Lade unter genspark.ai/pricing auf und versuche es erneut',
+    'Deine sOffice AI-Credits sind aufgebraucht. Bitte überprüfe dein Konto oder die API-Schlüssel-Einstellungen und versuche es erneut',
     aiToolReadPages: 'Seiten {start}-{end} lesen',
     aiToolSearch: '„{query}" suchen ({count} Treffer)',
     aiToolGoto: 'Zu Seite {page} springen',
@@ -2162,7 +2163,7 @@ export const strings = {
     removeStamp: 'Klicken, um dieses Wasserzeichen / diese Kopfzeile auszuwählen',
     props: 'Eigenschaften',
     propsTitle: 'Dokumenteigenschaften',
-    ribbonAiAssistant: 'Genspark',
+    ribbonAiAssistant: 'sAI',
     ribbonAiAssistantTip: 'KI-Assistenten öffnen',
     propTitle: 'Titel',
     propAuthor: 'Autor',
@@ -2333,7 +2334,7 @@ export const strings = {
     aiNetworkError:
       'Problema de red: no se pudo conectar con el servicio de IA. Comprueba tu conexión e inténtalo de nuevo',
     aiCreditsExhausted:
-      'Tus créditos de Genspark se han agotado. Recarga en genspark.ai/pricing e inténtalo de nuevo',
+    'Tus créditos de sOffice AI se han agotado. Revisa tu cuenta o la configuración de clave de API e inténtalo de nuevo',
     aiToolReadPages: 'Leer páginas {start}-{end}',
     aiToolSearch: 'Buscar «{query}» ({count} resultados)',
     aiToolGoto: 'Ir a la página {page}',
@@ -2503,7 +2504,7 @@ export const strings = {
     removeStamp: 'Haz clic para seleccionar esta marca de agua / encabezado',
     props: 'Propiedades',
     propsTitle: 'Propiedades del documento',
-    ribbonAiAssistant: 'Genspark',
+    ribbonAiAssistant: 'sAI',
     ribbonAiAssistantTip: 'Abrir el asistente de IA',
     propTitle: 'Título',
     propAuthor: 'Autor',
@@ -2671,7 +2672,7 @@ export const strings = {
     aiNetworkError:
       'เครือข่ายมีปัญหา ไม่สามารถเชื่อมต่อบริการ AI ได้ โปรดตรวจสอบการเชื่อมต่อแล้วลองใหม่',
     aiCreditsExhausted:
-      'เครดิต Genspark ของคุณหมดแล้ว โปรดเติมเครดิตที่ genspark.ai/pricing แล้วลองใหม่',
+    'เครดิต sOffice AI ของคุณหมดแล้ว โปรดตรวจสอบบัญชีหรือการตั้งค่าคีย์ API แล้วลองใหม่',
     aiToolReadPages: 'อ่านหน้า {start}-{end}',
     aiToolSearch: 'ค้นหา "{query}" ({count} แห่ง)',
     aiToolGoto: 'ไปที่หน้า {page}',
@@ -2837,7 +2838,7 @@ export const strings = {
     removeStamp: 'คลิกเพื่อเลือกลายน้ำ/หัวท้ายนี้',
     props: 'คุณสมบัติ',
     propsTitle: 'คุณสมบัติเอกสาร',
-    ribbonAiAssistant: 'Genspark',
+    ribbonAiAssistant: 'sAI',
     ribbonAiAssistantTip: 'เปิดผู้ช่วย AI',
     propTitle: 'ชื่อเรื่อง',
     propAuthor: 'ผู้เขียน',
@@ -3006,7 +3007,7 @@ export const strings = {
     aiNetworkError:
       'Masalah jaringan: tidak dapat terhubung ke layanan AI. Periksa koneksi Anda lalu coba lagi',
     aiCreditsExhausted:
-      'Kredit Genspark Anda telah habis. Isi ulang di genspark.ai/pricing lalu coba lagi',
+    'Kredit sOffice AI Anda telah habis. Periksa akun atau pengaturan kunci API Anda lalu coba lagi',
     aiToolReadPages: 'Baca halaman {start}-{end}',
     aiToolSearch: 'Cari "{query}" ({count} temuan)',
     aiToolGoto: 'Ke halaman {page}',
@@ -3175,7 +3176,7 @@ export const strings = {
     removeStamp: 'Klik untuk memilih tanda air / header ini',
     props: 'Properti',
     propsTitle: 'Properti dokumen',
-    ribbonAiAssistant: 'Genspark',
+    ribbonAiAssistant: 'sAI',
     ribbonAiAssistantTip: 'Buka asisten AI',
     propTitle: 'Judul',
     propAuthor: 'Penulis',
@@ -3344,7 +3345,7 @@ export const strings = {
     aiNetworkError:
       'Проблема с сетью: не удалось подключиться к сервису ИИ. Проверьте подключение и повторите попытку',
     aiCreditsExhausted:
-      'Кредиты Genspark исчерпаны. Пополните баланс на genspark.ai/pricing и повторите попытку',
+    'Кредиты sOffice AI исчерпаны. Проверьте аккаунт или настройки API-ключа и повторите попытку',
     aiToolReadPages: 'Чтение страниц {start}-{end}',
     aiToolSearch: 'Поиск «{query}» ({count} совпадений)',
     aiToolGoto: 'Перейти на страницу {page}',
@@ -3514,7 +3515,7 @@ export const strings = {
     removeStamp: 'Нажмите, чтобы выбрать этот знак / колонтитул',
     props: 'Свойства',
     propsTitle: 'Свойства документа',
-    ribbonAiAssistant: 'Genspark',
+    ribbonAiAssistant: 'sAI',
     ribbonAiAssistantTip: 'Открыть помощника ИИ',
     propTitle: 'Заголовок',
     propAuthor: 'Автор',
@@ -3681,7 +3682,7 @@ export const strings = {
     aiNetworkError:
       'مشكلة في الشبكة: تعذّر الوصول إلى خدمة الذكاء الاصطناعي. تحقق من الاتصال وحاول مجددًا',
     aiCreditsExhausted:
-      'نفدت أرصدة Genspark لديك. يرجى إعادة الشحن عبر genspark.ai/pricing ثم المحاولة مجددًا',
+    'نفدت أرصدة sOffice AI لديك. يرجى التحقق من حسابك أو إعدادات مفتاح API ثم المحاولة مجددًا',
     aiToolReadPages: 'قراءة الصفحات {start}-{end}',
     aiToolSearch: 'بحث عن "{query}" ({count} نتيجة)',
     aiToolGoto: 'الانتقال إلى الصفحة {page}',
@@ -3847,7 +3848,7 @@ export const strings = {
     removeStamp: 'انقر لتحديد هذه العلامة/الرأس',
     props: 'الخصائص',
     propsTitle: 'خصائص المستند',
-    ribbonAiAssistant: 'Genspark',
+    ribbonAiAssistant: 'sAI',
     ribbonAiAssistantTip: 'فتح مساعد الذكاء الاصطناعي',
     propTitle: 'العنوان',
     propAuthor: 'المؤلف',
@@ -4017,7 +4018,7 @@ export const strings = {
     aiNetworkError:
       'Problema de rede: não foi possível conectar ao serviço de IA. Verifique sua conexão e tente novamente',
     aiCreditsExhausted:
-      'Seus créditos Genspark acabaram. Recarregue em genspark.ai/pricing e tente novamente',
+    'Seus créditos sOffice IA acabaram. Verifique sua conta ou as configurações da chave de API e tente novamente',
     aiToolReadPages: 'Ler páginas {start}-{end}',
     aiToolSearch: 'Pesquisar "{query}" ({count} ocorrências)',
     aiToolGoto: 'Ir para a página {page}',
@@ -4186,7 +4187,7 @@ export const strings = {
     removeStamp: "Clique para selecionar esta marca d'água / cabeçalho",
     props: 'Propriedades',
     propsTitle: 'Propriedades do documento',
-    ribbonAiAssistant: 'Genspark',
+    ribbonAiAssistant: 'sAI',
     ribbonAiAssistantTip: 'Abrir o assistente de IA',
     propTitle: 'Título',
     propAuthor: 'Autor',
@@ -4357,7 +4358,7 @@ export const strings = {
     aiNetworkError:
       'Problema di rete: impossibile raggiungere il servizio IA. Controlla la connessione e riprova',
     aiCreditsExhausted:
-      'I tuoi crediti Genspark sono esauriti. Ricarica su genspark.ai/pricing e riprova',
+    'I tuoi crediti sOffice IA sono esauriti. Controlla il tuo account o le impostazioni della chiave API e riprova',
     aiToolReadPages: 'Leggi le pagine {start}-{end}',
     aiToolSearch: 'Cerca "{query}" ({count} risultati)',
     aiToolGoto: 'Vai alla pagina {page}',
@@ -4528,7 +4529,7 @@ export const strings = {
     removeStamp: 'Fai clic per selezionare questa filigrana / intestazione',
     props: 'Proprietà',
     propsTitle: 'Proprietà del documento',
-    ribbonAiAssistant: 'Genspark',
+    ribbonAiAssistant: 'sAI',
     ribbonAiAssistantTip: "Apri l'assistente IA",
     propTitle: 'Titolo',
     propAuthor: 'Autore',
@@ -4697,7 +4698,7 @@ export const strings = {
     aiNetworkError:
       'Problem z siecią: nie można połączyć się z usługą AI. Sprawdź połączenie i spróbuj ponownie',
     aiCreditsExhausted:
-      'Twoje kredyty Genspark wyczerpały się. Doładuj konto na genspark.ai/pricing i spróbuj ponownie',
+    'Twoje kredyty sOffice AI wyczerpały się. Sprawdź konto lub ustawienia klucza API i spróbuj ponownie',
     aiToolReadPages: 'Czytaj strony {start}-{end}',
     aiToolSearch: 'Szukaj „{query}" ({count} wyników)',
     aiToolGoto: 'Przejdź do strony {page}',
@@ -4867,7 +4868,7 @@ export const strings = {
     removeStamp: 'Kliknij, aby zaznaczyć ten znak wodny / nagłówek',
     props: 'Właściwości',
     propsTitle: 'Właściwości dokumentu',
-    ribbonAiAssistant: 'Genspark',
+    ribbonAiAssistant: 'sAI',
     ribbonAiAssistantTip: 'Otwórz asystenta AI',
     propTitle: 'Tytuł',
     propAuthor: 'Autor',
@@ -5035,7 +5036,7 @@ export const strings = {
     aiNetworkError:
       'Problém se sítí: službu AI se nepodařilo kontaktovat. Zkontrolujte připojení a zkuste to znovu',
     aiCreditsExhausted:
-      'Vaše kredity Genspark byly vyčerpány. Navštivte genspark.ai/pricing, dobijte je a zkuste to znovu',
+    'Vaše kredity sOffice AI byly vyčerpány. Zkontrolujte svůj účet nebo nastavení API klíče a zkuste to znovu',
     aiToolReadPages: 'Číst stránky {start}-{end}',
     aiToolSearch: 'Hledat „{query}“ ({count} výskytů)',
     aiToolGoto: 'Přejít na stránku {page}',
@@ -5204,7 +5205,7 @@ export const strings = {
     removeStamp: 'Kliknutím vyberete tento vodoznak / záhlaví / zápatí',
     props: 'Vlastnosti',
     propsTitle: 'Vlastnosti dokumentu',
-    ribbonAiAssistant: 'Genspark',
+    ribbonAiAssistant: 'sAI',
     ribbonAiAssistantTip: 'Otevřít asistenta AI',
     propTitle: 'Název',
     propAuthor: 'Autor',
@@ -5374,7 +5375,7 @@ export const strings = {
     aiNetworkError:
       'Netwerkprobleem: kan de AI-service niet bereiken. Controleer je verbinding en probeer het opnieuw',
     aiCreditsExhausted:
-      'Je Genspark-credits zijn op. Waardeer op via genspark.ai/pricing en probeer het opnieuw',
+    'Je sOffice AI-credits zijn op. Controleer je account of API-sleutelinstellingen en probeer het opnieuw',
     aiToolReadPages: "Pagina's {start}-{end} lezen",
     aiToolSearch: 'Zoeken naar "{query}" ({count} resultaten)',
     aiToolGoto: 'Ga naar pagina {page}',
@@ -5543,7 +5544,7 @@ export const strings = {
     removeStamp: 'Klik om dit watermerk / deze koptekst te selecteren',
     props: 'Eigenschappen',
     propsTitle: 'Documenteigenschappen',
-    ribbonAiAssistant: 'Genspark',
+    ribbonAiAssistant: 'sAI',
     ribbonAiAssistantTip: 'De AI-assistent openen',
     propTitle: 'Titel',
     propAuthor: 'Auteur',
@@ -5712,7 +5713,7 @@ export const strings = {
     aiNetworkError:
       'Masalah rangkaian: tidak dapat menghubungi perkhidmatan AI. Semak sambungan anda dan cuba lagi',
     aiCreditsExhausted:
-      'Kredit Genspark anda telah habis. Tambah nilai di genspark.ai/pricing dan cuba lagi',
+    'Kredit sOffice AI anda telah habis. Sila semak akaun atau tetapan kunci API anda dan cuba lagi',
     aiToolReadPages: 'Baca halaman {start}-{end}',
     aiToolSearch: 'Cari "{query}" ({count} padanan)',
     aiToolGoto: 'Pergi ke halaman {page}',
@@ -5881,7 +5882,7 @@ export const strings = {
     removeStamp: 'Klik untuk memilih tera air / pengepala ini',
     props: 'Sifat',
     propsTitle: 'Sifat dokumen',
-    ribbonAiAssistant: 'Genspark',
+    ribbonAiAssistant: 'sAI',
     ribbonAiAssistantTip: 'Buka pembantu AI',
     propTitle: 'Tajuk',
     propAuthor: 'Pengarang',
@@ -6045,7 +6046,8 @@ export const strings = {
     aiTimeoutError: 'תם הזמן לבקשת ה-AI: אין תגובה מהרשת וההרצה הופסקה. בדוק את החיבור ונסה שוב',
     aiOverloadedError: 'שירות ה-AI עמוס כרגע — נסו שוב בעוד רגע',
     aiNetworkError: 'בעיית רשת: לא ניתן להתחבר לשירות ה-AI. בדוק את החיבור ונסה שוב',
-    aiCreditsExhausted: 'קרדיטי Genspark שלך אזלו. טען מחדש ב-genspark.ai/pricing ונסה שוב',
+    aiCreditsExhausted:
+    'קרדיטי sOffice AI שלך אזלו. בדקו את הגדרות החשבון או מפתח ה-API ונסו שוב',
     aiToolReadPages: 'קריאת עמודים {start}-{end}',
     aiToolSearch: 'חיפוש "{query}" ({count} תוצאות)',
     aiToolGoto: 'מעבר לעמוד {page}',
@@ -6210,7 +6212,7 @@ export const strings = {
     removeStamp: 'לחצו לבחירת סימן המים/הכותרת הזו',
     props: 'מאפיינים',
     propsTitle: 'מאפייני המסמך',
-    ribbonAiAssistant: 'Genspark',
+    ribbonAiAssistant: 'sAI',
     ribbonAiAssistantTip: 'פתח את עוזר ה-AI',
     propTitle: 'כותרת',
     propAuthor: 'מחבר',
@@ -6378,7 +6380,7 @@ export const strings = {
     aiNetworkError:
       'नेटवर्क समस्या: AI सेवा से कनेक्ट नहीं हो सका। कनेक्शन जांचें और फिर से प्रयास करें',
     aiCreditsExhausted:
-      'आपके Genspark क्रेडिट समाप्त हो गए हैं। genspark.ai/pricing पर रिचार्ज करें और फिर से प्रयास करें',
+    'आपके sOffice AI क्रेडिट समाप्त हो गए हैं। कृपया अपने खाते या API कुंजी सेटिंग्स की जाँच करें और पुनः प्रयास करें',
     aiToolReadPages: 'पृष्ठ {start}-{end} पढ़ें',
     aiToolSearch: '"{query}" खोजें ({count} परिणाम)',
     aiToolGoto: 'पृष्ठ {page} पर जाएँ',
@@ -6545,7 +6547,7 @@ export const strings = {
     removeStamp: 'इस वॉटरमार्क/शीर्षलेख-पादलेख को चुनने के लिए क्लिक करें',
     props: 'गुण',
     propsTitle: 'दस्तावेज़ गुण',
-    ribbonAiAssistant: 'Genspark',
+    ribbonAiAssistant: 'sAI',
     ribbonAiAssistantTip: 'AI सहायक खोलें',
     propTitle: 'शीर्षक',
     propAuthor: 'लेखक',
@@ -6709,7 +6711,8 @@ export const strings = {
     aiTimeoutError: 'AI 請求逾時：網路長時間無回應，已停止。請檢查網路後重試',
     aiOverloadedError: 'AI 服務目前繁忙，請稍後重試',
     aiNetworkError: '網路有問題，無法連接 AI 服務。請檢查網路後重試',
-    aiCreditsExhausted: 'Genspark 點數已用完，請前往 genspark.ai/pricing 儲值後重試',
+    aiCreditsExhausted:
+    'sOffice AI 點數已用完，請檢查帳號或 API Key 設定後重試',
     aiToolReadPages: '讀取第 {start}-{end} 頁',
     aiToolSearch: '搜尋「{query}」（{count} 處）',
     aiToolGoto: '跳至第 {page} 頁',
@@ -6872,7 +6875,7 @@ export const strings = {
     removeStamp: '點一下選取此浮水印/頁首頁尾',
     props: '屬性',
     propsTitle: '文件屬性',
-    ribbonAiAssistant: 'Genspark',
+    ribbonAiAssistant: 'sAI',
     ribbonAiAssistantTip: '開啟 AI 助理',
     propTitle: '標題',
     propAuthor: '作者',

@@ -4,8 +4,9 @@ import { join } from 'node:path'
 import { realizedPath } from './fs'
 import { CliError, EXIT } from './result'
 
-/** The shell's Electron userData directory, located without Electron (GENOFFICE_USER_DATA overrides). */
+/** The shell's Electron userData directory, located without Electron (SOFFICE_USER_DATA / GENOFFICE_USER_DATA overrides). */
 export function genofficeUserDataDir(env: NodeJS.ProcessEnv): string {
+  if (env.SOFFICE_USER_DATA) return env.SOFFICE_USER_DATA
   if (env.GENOFFICE_USER_DATA) return env.GENOFFICE_USER_DATA
   const base =
     process.platform === 'darwin'
@@ -13,7 +14,11 @@ export function genofficeUserDataDir(env: NodeJS.ProcessEnv): string {
       : process.platform === 'win32'
         ? env.APPDATA || join(homedir(), 'AppData', 'Roaming')
         : env.XDG_CONFIG_HOME || join(homedir(), '.config')
-  return join(base, 'GenOffice')
+  const sofficeDir = join(base, 'sOffice')
+  if (existsSync(sofficeDir)) return sofficeDir
+  const genofficeDir = join(base, 'GenOffice')
+  if (existsSync(genofficeDir)) return genofficeDir
+  return sofficeDir
 }
 
 export interface GuiOpenDocuments {
@@ -22,15 +27,34 @@ export interface GuiOpenDocuments {
 }
 
 /**
- * Files the running GenOffice shell has open, from the registries it publishes
+ * Files the running sOffice/GenOffice shell has open, from the registries it publishes
  * on every tab change (apps/shell/src/main/open-documents.ts). Empty when no
  * shell is running: a registry whose pid is gone is a crash leftover.
  */
 export function guiOpenDocuments(
   env: NodeJS.ProcessEnv,
-  dirs = env.GENOFFICE_USER_DATA
-    ? [env.GENOFFICE_USER_DATA]
-    : [genofficeUserDataDir(env), `${genofficeUserDataDir(env)} Dev`],
+  dirs = env.SOFFICE_USER_DATA || env.GENOFFICE_USER_DATA
+    ? [env.SOFFICE_USER_DATA || env.GENOFFICE_USER_DATA!]
+    : [
+        genofficeUserDataDir(env),
+        `${genofficeUserDataDir(env)} Dev`,
+        join(
+          process.platform === 'darwin'
+            ? join(homedir(), 'Library', 'Application Support')
+            : process.platform === 'win32'
+              ? env.APPDATA || join(homedir(), 'AppData', 'Roaming')
+              : env.XDG_CONFIG_HOME || join(homedir(), '.config'),
+          'GenOffice',
+        ),
+        join(
+          process.platform === 'darwin'
+            ? join(homedir(), 'Library', 'Application Support')
+            : process.platform === 'win32'
+              ? env.APPDATA || join(homedir(), 'AppData', 'Roaming')
+              : env.XDG_CONFIG_HOME || join(homedir(), '.config'),
+          'GenOffice Dev',
+        ),
+      ],
 ): GuiOpenDocuments[] {
   const live: GuiOpenDocuments[] = []
   for (const dir of dirs) {
@@ -67,12 +91,12 @@ export function assertNotOpenInGui(abs: string, env: NodeJS.ProcessEnv): void {
     if (!open.paths.some((p) => realizedPath(p) === target)) continue
     throw new CliError(
       EXIT.file,
-      `GenOffice has this file open: ${abs}`,
+      `sOffice has this file open: ${abs}`,
       { gui_pid: open.pid },
       {
         reason: 'file_open_in_gui',
         suggestion:
-          'close the tab in GenOffice first, or pass --force to write anyway (the editor may overwrite your change on its next save)',
+          'close the tab in sOffice first, or pass --force to write anyway (the editor may overwrite your change on its next save)',
       },
     )
   }
