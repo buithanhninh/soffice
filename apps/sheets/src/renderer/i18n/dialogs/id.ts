@@ -400,6 +400,7 @@ export const id = {
   dlgFnDescNper: 'Mengembalikan jumlah periode investasi.',
   dlgFnDescNpv: 'Mengembalikan nilai sekarang bersih arus kas pada tingkat diskonto.',
   dlgFnDescIrr: 'Mengembalikan tingkat pengembalian internal serangkaian arus kas.',
+  dlgFnDescQuery: 'Menjalankan kueri SQL Google Sheets pada array ho???c rentang sel.',
   dlgFnCatFinancial: 'Keuangan',
   dlgFnCatDatabase: 'Basis data',
   dlgFnCatInformation: 'Informasi',

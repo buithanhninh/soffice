@@ -401,6 +401,7 @@ export const pl = {
   dlgFnDescNper: 'Zwraca liczbę okresów inwestycji.',
   dlgFnDescNpv: 'Zwraca wartość bieżącą netto przepływów przy danej stopie dyskontowej.',
   dlgFnDescIrr: 'Zwraca wewnętrzną stopę zwrotu dla serii przepływów.',
+  dlgFnDescQuery: 'Wykonuje zapytanie SQL Google Sheets na tablicy lub zakresie kom??rek.',
   dlgFnCatFinancial: 'Finansowe',
   dlgFnCatDatabase: 'Baza danych',
   dlgFnCatInformation: 'Informacyjne',

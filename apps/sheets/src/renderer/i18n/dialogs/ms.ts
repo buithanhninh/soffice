@@ -398,6 +398,7 @@ export const ms = {
   dlgFnDescNper: 'Mengembalikan bilangan tempoh pelaburan.',
   dlgFnDescNpv: 'Mengembalikan nilai kini bersih aliran tunai pada kadar diskaun.',
   dlgFnDescIrr: 'Mengembalikan kadar pulangan dalaman satu siri aliran tunai.',
+  dlgFnDescQuery: 'Menjalankan pertanyaan SQL Google Sheets merentasi tatasusunan atau julat sel.',
   dlgFnCatFinancial: 'Kewangan',
   dlgFnCatDatabase: 'Pangkalan data',
   dlgFnCatInformation: 'Maklumat',

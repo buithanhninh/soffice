@@ -403,6 +403,7 @@ export const de = {
   dlgFnDescNper: 'Gibt die Anzahl der Zahlungsperioden zurück.',
   dlgFnDescNpv: 'Gibt den Nettobarwert eines Cashflows bei einem Abschlagssatz zurück.',
   dlgFnDescIrr: 'Gibt den internen Zinsfuß einer Cashflow-Reihe zurück.',
+  dlgFnDescQuery: 'F??hrt eine Google Sheets SQL-Abfrage ??ber ein Array oder einen Zellbereich aus.',
   dlgFnCatFinancial: 'Finanzmathematik',
   dlgFnCatDatabase: 'Datenbank',
   dlgFnCatInformation: 'Information',

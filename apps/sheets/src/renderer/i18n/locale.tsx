@@ -101,3 +101,9 @@ export function useI18n(): I18n {
     dateLocale: DATE_LOCALES[lang],
   }
 }
+
+/** Localization descriptions for QUERY function */
+export const QUERY_LOCALE_DESCRIPTIONS = {
+  'en-US': 'Runs a Google Sheets SQL query across an array or cell range.',
+  'vi-VN': 'Th???c hi???n truy v???n SQL Google Sheets tr??n m???ng ho???c v??ng d??? li???u.',
+} as const

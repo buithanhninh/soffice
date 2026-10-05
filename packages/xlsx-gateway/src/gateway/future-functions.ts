@@ -6,9 +6,18 @@
 /// #NAME?.
 
 /// Functions Excel 2007 does not know, keyed by the marker they need.
-const XLWS_FUNCTIONS = new Set(['FILTER', 'SORT'])
+export const XLWS_FUNCTIONS = new Set([
+  'FILTER',
+  'RANDARRAY',
+  'SEQUENCE',
+  'SORT',
+  'SORTBY',
+  'UNIQUE',
+  'XLOOKUP',
+  'XMATCH',
+])
 
-const XLFN_FUNCTIONS = new Set([
+export const XLFN_FUNCTIONS = new Set([
   // Excel 2010
   'AGGREGATE',
   'BETA.DIST',
@@ -147,11 +156,8 @@ const XLFN_FUNCTIONS = new Set([
   'LET',
   'MAKEARRAY',
   'MAP',
-  'RANDARRAY',
   'REDUCE',
   'SCAN',
-  'SEQUENCE',
-  'SORTBY',
   'STOCKHISTORY',
   'TAKE',
   'TEXTAFTER',
@@ -159,12 +165,9 @@ const XLFN_FUNCTIONS = new Set([
   'TEXTSPLIT',
   'TOCOL',
   'TOROW',
-  'UNIQUE',
   'VSTACK',
   'WRAPCOLS',
   'WRAPROWS',
-  'XLOOKUP',
-  'XMATCH',
   // Storage forms of the @ implicit-intersection and # spill operators.
   'SINGLE',
   'ANCHORARRAY',
@@ -174,7 +177,7 @@ const XLFN_FUNCTIONS = new Set([
 /// spills a stored formula that is marked as a dynamic array (`t="array"` on
 /// the <f> plus `cm="1"` on the cell); an unmarked call is read as `@FILTER`
 /// and returns one value.
-const SPILL_FUNCTIONS = new Set([
+export const SPILL_FUNCTIONS = new Set([
   'BYCOL',
   'BYROW',
   'CHOOSECOLS',
@@ -185,6 +188,7 @@ const SPILL_FUNCTIONS = new Set([
   'HSTACK',
   'MAKEARRAY',
   'MAP',
+  'QUERY',
   'RANDARRAY',
   'SCAN',
   'SEQUENCE',

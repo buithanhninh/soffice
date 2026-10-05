@@ -400,6 +400,7 @@ export const en = {
   dlgFnDescNper: 'Returns the number of periods for an investment.',
   dlgFnDescNpv: 'Returns the net present value of a cash flow at a discount rate.',
   dlgFnDescIrr: 'Returns the internal rate of return for a series of cash flows.',
+  dlgFnDescQuery: 'Runs a Google Sheets SQL query across an array or cell range.',
   dlgFnCatFinancial: 'Financial',
   dlgFnCatDatabase: 'Database',
   dlgFnCatInformation: 'Information',

@@ -1,0 +1,1506 @@
+{
+  "timestamp": "2026-10-05T04:32:34.532Z",
+  "runner": "e2e/sheets-all-tiers.mjs",
+  "summary": {
+    "total": 184,
+    "passed": 184,
+    "failed": 0,
+    "passRate": "100.0%"
+  },
+  "tiers": {
+    "tier1": {
+      "total": 80,
+      "passed": 80,
+      "failed": 0
+    },
+    "tier2": {
+      "total": 80,
+      "passed": 80,
+      "failed": 0
+    },
+    "tier3": {
+      "total": 16,
+      "passed": 16,
+      "failed": 0
+    },
+    "tier4": {
+      "total": 8,
+      "passed": 8,
+      "failed": 0
+    }
+  },
+  "cases": [
+    {
+      "id": "T1.1.1",
+      "feature": 1,
+      "description": "FILTER extracts matching rows given boolean condition vector",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.1.2",
+      "feature": 1,
+      "description": "SORT and SORTBY sort 2D array by specified column index ascending/descending",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.1.3",
+      "feature": 1,
+      "description": "UNIQUE deduplicates 2D rows preserving first occurrence order",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.1.4",
+      "feature": 1,
+      "description": "SEQUENCE generates 2D grid of sequential numbers with start and step",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 1
+    },
+    {
+      "id": "T1.1.5",
+      "feature": 1,
+      "description": "XLOOKUP performs exact and approximate lookup with fallback value",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.2.1",
+      "feature": 2,
+      "description": "QUERY executes basic SELECT ColX, ColY projecting columns",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 1
+    },
+    {
+      "id": "T1.2.2",
+      "feature": 2,
+      "description": "QUERY evaluates WHERE predicate with numeric comparisons",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.2.3",
+      "feature": 2,
+      "description": "QUERY executes ORDER BY clause sorting numeric/string records",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 1
+    },
+    {
+      "id": "T1.2.4",
+      "feature": 2,
+      "description": "QUERY executes GROUP BY with aggregate functions (sum/avg/count)",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.2.5",
+      "feature": 2,
+      "description": "QUERY respects LIMIT and OFFSET pagination clauses",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.3.1",
+      "feature": 3,
+      "description": "Spill allocation dynamically claims bounding box for 2D array output",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.3.2",
+      "feature": 3,
+      "description": "Collision detection detects occupied cell in spill trajectory and returns #SPILL!",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 1
+    },
+    {
+      "id": "T1.3.3",
+      "feature": 3,
+      "description": "Clearing blocking cell enables reactive re-spill to populate dynamic matrix",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.3.4",
+      "feature": 3,
+      "description": "Follower cells in active spill zone are marked with root cell ownership",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.3.5",
+      "feature": 3,
+      "description": "Teardown of root formula cell vacates all follower cells cleanly",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.4.1",
+      "feature": 4,
+      "description": "Dynamic array functions serialize with _xlfn._xlws. prefixes in XML formulas",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.4.2",
+      "feature": 4,
+      "description": "Cells containing dynamic array formulas serialize with cm=\"1\" calculation marker",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.4.3",
+      "feature": 4,
+      "description": "Spill formulas serialize <f t=\"array\" ref=\"...\"> with dimension bounding box",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 1
+    },
+    {
+      "id": "T1.4.4",
+      "feature": 4,
+      "description": "Deserialization strips storage markers into canonical uppercase formula names",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.4.5",
+      "feature": 4,
+      "description": "QUERY function is registered in SPILL_FUNCTIONS set for dynamic array serialization",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.5.1",
+      "feature": 5,
+      "description": "=AI(prompt, cell) constructs valid aiChat request with single cell context",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.5.2",
+      "feature": 5,
+      "description": "=AI with 2D range context serializes grid into structured markdown table",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.5.3",
+      "feature": 5,
+      "description": "=AI_EXTRACT extracts specified pattern entities into structured cell array",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 1
+    },
+    {
+      "id": "T1.5.4",
+      "feature": 5,
+      "description": "=AI_TRANSLATE constructs translation payload with source text and target language",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.5.5",
+      "feature": 5,
+      "description": "AsyncCustomFunction contract resolves asynchronous promise into string value object",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.6.1",
+      "feature": 6,
+      "description": "AiFormulaCache generates deterministic key from unit, sheet, row, col, and args hash",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 1
+    },
+    {
+      "id": "T1.6.2",
+      "feature": 6,
+      "description": "Memoized cache hit returns cached value without executing upstream network call",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.6.3",
+      "feature": 6,
+      "description": "In-flight promise joining deduplicates concurrent identical formula executions",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 1
+    },
+    {
+      "id": "T1.6.4",
+      "feature": 6,
+      "description": "Precedent cell mutation invalidates corresponding cached formula entries",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.6.5",
+      "feature": 6,
+      "description": "Cache persistence writes resolved AI formula values to sheet XML storage",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 1
+    },
+    {
+      "id": "T1.7.1",
+      "feature": 7,
+      "description": "IQR anomaly detection calculates Q1, Q3, and outer fences accurately",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.7.2",
+      "feature": 7,
+      "description": "Z-score detection flags values exceeding standard deviation thresholds",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 1
+    },
+    {
+      "id": "T1.7.3",
+      "feature": 7,
+      "description": "Moderate anomalies (2.0 <= |Z| < 3.0) receive amber severity classification",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.7.4",
+      "feature": 7,
+      "description": "Extreme anomalies (|Z| >= 3.0) receive red severity classification",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.7.5",
+      "feature": 7,
+      "description": "Diagnostic summary prompt formats identified outliers and bounds for LLM analysis",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 1
+    },
+    {
+      "id": "T1.8.1",
+      "feature": 8,
+      "description": "Data profiling computes row count, numeric count, null count, sum, mean, min, and max",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.8.2",
+      "feature": 8,
+      "description": "KPI extraction identifies high-level metrics from tabular numerical columns",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.8.3",
+      "feature": 8,
+      "description": "Executive narrative generator constructs structured prompt with computed facts",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.8.4",
+      "feature": 8,
+      "description": "Insert Summary Sheet builds atomic WorkbookOperation[] creating summary tab",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.8.5",
+      "feature": 8,
+      "description": "Summary table formatting DSL applies title styling and KPI bold layouts",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 1
+    },
+    {
+      "id": "T1.9.1",
+      "feature": 9,
+      "description": "Waterfall chart engine calculates floating bases, deltas, and total anchor pillars",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.9.2",
+      "feature": 9,
+      "description": "Waterfall SVG connector lines generate exact adjacent bar connection coordinates",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.9.3",
+      "feature": 9,
+      "description": "Treemap layout partitions container area preserving aspect ratio close to 1.0",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.9.4",
+      "feature": 9,
+      "description": "Combo chart computes dual Y-axes scaling (primary left volume, secondary right line %)",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.9.5",
+      "feature": 9,
+      "description": "Ribbon Insert Chart registers WorkbookVisualObject with chart type and cell anchors",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.10.1",
+      "feature": 10,
+      "description": "=SPARKLINE parses options object including charttype, color, and linewidth",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.10.2",
+      "feature": 10,
+      "description": "Line sparkline generates normalized SVG path polyline scaled to cell dimensions",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 1
+    },
+    {
+      "id": "T1.10.3",
+      "feature": 10,
+      "description": "Column sparkline generates SVG rect elements scaled to min/max data range",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.10.4",
+      "feature": 10,
+      "description": "Stacked/Win-Loss sparkline generates positive and negative blocks along central baseline",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.10.5",
+      "feature": 10,
+      "description": "Float DOM registry binds in-cell sparkline component to target cell coordinates",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.11.1",
+      "feature": 11,
+      "description": "Slicer engine extracts unique sorted values from target table column",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.11.2",
+      "feature": 11,
+      "description": "Clicking slicer button toggles single selection and filters target data rows",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.11.3",
+      "feature": 11,
+      "description": "Multi-select mode allows choosing multiple items with logical OR filtering",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.11.4",
+      "feature": 11,
+      "description": "Clear Filter button resets all selections and unhides 100% of rows",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.11.5",
+      "feature": 11,
+      "description": "Slicer visual state renders active buttons with pressed state and active counter badge",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.12.1",
+      "feature": 12,
+      "description": "Calculated field formula tokenizer parses field names, operators, and literals",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.12.2",
+      "feature": 12,
+      "description": "Calculated field evaluator respects arithmetic operator precedence",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.12.3",
+      "feature": 12,
+      "description": "Calculated field evaluates metric values against aggregated row summary data",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.12.4",
+      "feature": 12,
+      "description": "Calculated measure registers into Pivot Table field list under values area",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.12.5",
+      "feature": 12,
+      "description": "CalculatedFieldDialog validates formula syntax and field name uniqueness",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.13.1",
+      "feature": 13,
+      "description": "Web Worker sandbox receives RUN_SCRIPT message and returns structured result",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.13.2",
+      "feature": 13,
+      "description": "SpreadsheetApp API emits valid SetCellValue operations",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.13.3",
+      "feature": 13,
+      "description": "Atomic batch collector groups script mutations into unified transaction plan",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.13.4",
+      "feature": 13,
+      "description": "Atomic undo registers single rollback step for full script operation batch",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.13.5",
+      "feature": 13,
+      "description": "Script console logs are captured and returned in ScriptOutput.logs array",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.14.1",
+      "feature": 14,
+      "description": "Delimiter sniffer auto-detects comma, tab, semicolon, or pipe delimiters",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.14.2",
+      "feature": 14,
+      "description": "RFC 4180 CSV parser handles quoted multiline fields and escaped quotes",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 1
+    },
+    {
+      "id": "T1.14.3",
+      "feature": 14,
+      "description": "JSON flattener transforms nested JSON objects into 2D tabular headers and rows",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.14.4",
+      "feature": 14,
+      "description": "REST API import connector dispatches fetch and parses JSON response into table",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.14.5",
+      "feature": 14,
+      "description": "Data import places converted 2D matrix starting at user-selected target cell",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.15.1",
+      "feature": 15,
+      "description": "Serialized .xlsx package contains valid ZIP structure and required OpenXML parts",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.15.2",
+      "feature": 15,
+      "description": "Worksheet XML complies with ECMA-376 schema standards and namespaces",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.15.3",
+      "feature": 15,
+      "description": "Shared Strings Table deduplicates identical strings and maintains index refs",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.15.4",
+      "feature": 15,
+      "description": "Defined names and sheet tabs are preserved across save and reload cycles",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.15.5",
+      "feature": 15,
+      "description": "Monorepo workspaces pass TypeScript typecheck audit with 0 compiler errors",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.16.1",
+      "feature": 16,
+      "description": "Master test harness executes all tiers and logs progress metrics",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.16.2",
+      "feature": 16,
+      "description": "Tier filtering CLI flags (--tier=N) isolate specific execution tiers",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.16.3",
+      "feature": 16,
+      "description": "Feature filtering CLI flag (--feature=N) isolates specific feature tests",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.16.4",
+      "feature": 16,
+      "description": "Test results serialize into structured JSON report file",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T1.16.5",
+      "feature": 16,
+      "description": "Clean exit code 0 is returned on 100% test pass",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 1
+    },
+    {
+      "id": "T2.1.1",
+      "feature": 1,
+      "description": "FILTER on range with no matching rows returns fallback argument or #CALC!",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.1.2",
+      "feature": 1,
+      "description": "XLOOKUP with mismatched lookup array and return array dimensions returns #VALUE!",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.1.3",
+      "feature": 1,
+      "description": "SEQUENCE with fractional start and negative step generates precise progression",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.1.4",
+      "feature": 1,
+      "description": "TEXTSPLIT with consecutive delimiters respects ignore_empty=true",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.1.5",
+      "feature": 1,
+      "description": "WRAPROWS with uneven count fills trailing cells with pad_with value",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.2.1",
+      "feature": 2,
+      "description": "QUERY with syntax error produces descriptive #VALUE! error message",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.2.2",
+      "feature": 2,
+      "description": "QUERY on empty input range [] returns empty dataset safely",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.2.3",
+      "feature": 2,
+      "description": "QUERY aggregations ignore null and blank cells in average calculations",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 2
+    },
+    {
+      "id": "T2.2.4",
+      "feature": 2,
+      "description": "QUERY LABEL clause customizes column header text while preserving data rows",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 1
+    },
+    {
+      "id": "T2.2.5",
+      "feature": 2,
+      "description": "QUERY with LIMIT 0 returns empty dataset with headers only",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.3.1",
+      "feature": 3,
+      "description": "Spill exceeding worksheet boundary (row 1,048,576 / col 16,384) raises #SPILL!",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.3.2",
+      "feature": 3,
+      "description": "Spill encountering cell containing whitespace string \" \" triggers collision",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.3.3",
+      "feature": 3,
+      "description": "Spill encountering merged cell block raises #SPILL! collision",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.3.4",
+      "feature": 3,
+      "description": "Intersecting spills between two dynamic arrays cleanly fail to #SPILL! without recursion",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.3.5",
+      "feature": 3,
+      "description": "Follower cell cached values are cleared on load to avoid false spill blocks",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 1
+    },
+    {
+      "id": "T2.4.1",
+      "feature": 4,
+      "description": "Nested dynamic arrays prefix all functions without duplicated _xlfn._xlfn.",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.4.2",
+      "feature": 4,
+      "description": "String literals containing function names (\"FILTER\") are never modified by marker injection",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.4.3",
+      "feature": 4,
+      "description": "Structured references (Table1[[#Data],[Col]]) preserve bracket syntax intact",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.4.4",
+      "feature": 4,
+      "description": "Case-insensitive input formulas normalize to canonical uppercase storage markers",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.4.5",
+      "feature": 4,
+      "description": "Scalar formulas (SUM, AVERAGE) serialize without cm=\"1\" or t=\"array\" markers",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.5.1",
+      "feature": 5,
+      "description": "Empty prompt or blank cell returns empty string immediately without firing network call",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 1
+    },
+    {
+      "id": "T2.5.2",
+      "feature": 5,
+      "description": "Missing BYOK API key returns #AUTH_REQUIRED! error code",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.5.3",
+      "feature": 5,
+      "description": "Upstream 429 rate limit error returns #RATE_LIMIT! status",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.5.4",
+      "feature": 5,
+      "description": "Multiline text and quotes in prompt are sanitized and escaped in JSON payloads",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.5.5",
+      "feature": 5,
+      "description": "Oversized range context (exceeding token budget) safely truncates with warning",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.6.1",
+      "feature": 6,
+      "description": "Concurrent burst of 100 identical =AI formulas fires exactly 1 network request",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 1
+    },
+    {
+      "id": "T2.6.2",
+      "feature": 6,
+      "description": "Editing formula text in cell coordinate invalidates existing cache entry",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.6.3",
+      "feature": 6,
+      "description": "Network error clears in-flight promise allowing subsequent recalculation retry",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.6.4",
+      "feature": 6,
+      "description": "LRU cache bounds memory usage preventing memory leaks on 10,000+ entries",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.6.5",
+      "feature": 6,
+      "description": "Prompts differing only by leading/trailing whitespace normalize to identical hash",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 1
+    },
+    {
+      "id": "T2.7.1",
+      "feature": 7,
+      "description": "Uniform dataset (variance 0) handles standard deviation 0 without division by zero",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.7.2",
+      "feature": 7,
+      "description": "Non-numeric cells (strings, dates, booleans) are filtered out before screening",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.7.3",
+      "feature": 7,
+      "description": "Small sample size (N < 4) falls back gracefully with insufficient data note",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.7.4",
+      "feature": 7,
+      "description": "Extreme floating point values (NaN, Infinity) are quarantined before percentiles",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.7.5",
+      "feature": 7,
+      "description": "10,000-row screening completes within 50ms performance budget",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 9
+    },
+    {
+      "id": "T2.8.1",
+      "feature": 8,
+      "description": "Empty selection range returns graceful validation error without generating blank sheet",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.8.2",
+      "feature": 8,
+      "description": "Single-column numeric range generates single-metric summary successfully",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.8.3",
+      "feature": 8,
+      "description": "Mixed column data types preserve numeric aggregates alongside text counts",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 1
+    },
+    {
+      "id": "T2.8.4",
+      "feature": 8,
+      "description": "Wide table with 100 columns aggregates summary metrics without prompt overflow",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.8.5",
+      "feature": 8,
+      "description": "Sheet name collision auto-increments to Executive Summary 2",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.9.1",
+      "feature": 9,
+      "description": "All-negative waterfall deltas render floating bars descending below baseline correctly",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.9.2",
+      "feature": 9,
+      "description": "Treemap with single data item renders 100% full-viewport rectangle",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.9.3",
+      "feature": 9,
+      "description": "Treemap data items with zero or negative weights are filtered out before layout",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.9.4",
+      "feature": 9,
+      "description": "Combo chart with missing secondary axis series renders primary axis cleanly",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.9.5",
+      "feature": 9,
+      "description": "Zero-dimension or collapsed chart container suppresses SVG rendering safely",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 1
+    },
+    {
+      "id": "T2.10.1",
+      "feature": 10,
+      "description": "Empty data array returns empty SVG element without throwing error",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.10.2",
+      "feature": 10,
+      "description": "Single numeric data point renders without division-by-zero NaN in SVG coordinates",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.10.3",
+      "feature": 10,
+      "description": "Series with all identical values centers flat horizontal line at midpoint",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.10.4",
+      "feature": 10,
+      "description": "Series containing null or NaN values filters missing items before path creation",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.10.5",
+      "feature": 10,
+      "description": "Extremely narrow cell aspect ratio clamps minimum SVG stroke and bar width to 1px",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.11.1",
+      "feature": 11,
+      "description": "High cardinality column (1,000+ items) enables search filter in slicer panel",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 1
+    },
+    {
+      "id": "T2.11.2",
+      "feature": 11,
+      "description": "Column with blank/null cells represents blanks as explicit (Blanks) button item",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.11.3",
+      "feature": 11,
+      "description": "Slicer attached to Pivot Table filters Pivot Cache rather than raw sheet rows",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.11.4",
+      "feature": 11,
+      "description": "Multiple slicers combine filter selections with logical AND conjunction",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.11.5",
+      "feature": 11,
+      "description": "Adding or deleting rows in source table triggers reactive refresh of slicer items",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.12.1",
+      "feature": 12,
+      "description": "Division by zero in calculated field formula returns #DIV/0! safely",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 1
+    },
+    {
+      "id": "T2.12.2",
+      "feature": 12,
+      "description": "Circular reference between calculated fields raises #CIRCULAR! error",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.12.3",
+      "feature": 12,
+      "description": "Field names with spaces and symbols (\"Total Sales (USD)\") parse cleanly",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.12.4",
+      "feature": 12,
+      "description": "Referencing non-existent field name raises #NAME? error",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.12.5",
+      "feature": 12,
+      "description": "Blank formula string raises validation error in calculated field dialog",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.13.1",
+      "feature": 13,
+      "description": "Infinite loop script (while(true){}) is terminated by 5000ms watchdog timeout",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.13.2",
+      "feature": 13,
+      "description": "Restricted globals (window, document, fetch, localStorage) are blocked in sandbox",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.13.3",
+      "feature": 13,
+      "description": "Script syntax error is captured and returned in ScriptOutput.error",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 1
+    },
+    {
+      "id": "T2.13.4",
+      "feature": 13,
+      "description": "Massive batch update (10,000 cell operations) executes within memory budget",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 1
+    },
+    {
+      "id": "T2.13.5",
+      "feature": 13,
+      "description": "Empty script executes with 0 operations and success status ok: true",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.14.1",
+      "feature": 14,
+      "description": "Malformed CSV with unclosed trailing quote recovers without parser freeze",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.14.2",
+      "feature": 14,
+      "description": "Large CSV file (50,000 rows) parses in chunks without memory exhaustion",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.14.3",
+      "feature": 14,
+      "description": "Polymorphic heterogeneous JSON objects produce unified schema column union",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.14.4",
+      "feature": 14,
+      "description": "REST API HTTP error responses (404, 500) return clear diagnostic message",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.14.5",
+      "feature": 14,
+      "description": "Zero-byte empty file import displays warning without corrupting active sheet",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.15.1",
+      "feature": 15,
+      "description": "Workbook with 0 data cells serializes minimal valid worksheet XML",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.15.2",
+      "feature": 15,
+      "description": "XML special characters (&, <, >, \", ') are properly escaped into XML entities",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.15.3",
+      "feature": 15,
+      "description": "Unknown vendor extensions (<extLst>) are preserved byte-for-byte in roundtrip",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.15.4",
+      "feature": 15,
+      "description": "Formula strings with lowercase names do not corrupt calculation chain metadata",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.15.5",
+      "feature": 15,
+      "description": "Non-ASCII sheet names (Vietnamese, Japanese, emoji) serialize in UTF-8",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.16.1",
+      "feature": 16,
+      "description": "Test assertion failure captures stack trace without terminating runner prematurely",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.16.2",
+      "feature": 16,
+      "description": "Test runner functions in headless CI/CD environment with zero interactive prompts",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.16.3",
+      "feature": 16,
+      "description": "Memory usage remains bounded with stable RSS footprint across 184 tests",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.16.4",
+      "feature": 16,
+      "description": "Sequential execution of suite is idempotent producing identical results",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T2.16.5",
+      "feature": 16,
+      "description": "Runner executes on standard Node.js runtime without external dev dependencies",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T3.1",
+      "feature": null,
+      "description": "Dynamic Array FILTER piped directly as input to in-cell =SPARKLINE",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T3.2",
+      "feature": null,
+      "description": "Google Sheets SQL =QUERY output spills into grid with collision lifecycle check",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T3.3",
+      "feature": null,
+      "description": "Dynamic Array SEQUENCE and UNIQUE serialize with _xlws. markers into OpenXML",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T3.4",
+      "feature": null,
+      "description": "AI In-Cell Formula (=AI) memoizes in AiFormulaCache across recalculations",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T3.5",
+      "feature": null,
+      "description": "CSV Data Import populates text column fed into =AI_EXTRACT",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T3.6",
+      "feature": null,
+      "description": "Anomaly Detection flags financial outliers highlighted in Advanced Waterfall Chart",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 1
+    },
+    {
+      "id": "T3.7",
+      "feature": null,
+      "description": "Smart Summarization category totals visualized in Squarified Treemap Chart",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T3.8",
+      "feature": null,
+      "description": "Button Slicer filters Pivot Table data updating Calculated Field values",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T3.9",
+      "feature": null,
+      "description": "Button Slicer filters table data dynamically updating dual-axis Combo Chart series",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T3.10",
+      "feature": null,
+      "description": "TypeScript Automation Script inserts =SEQUENCE(5) triggering dynamic spill engine",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T3.11",
+      "feature": null,
+      "description": "TypeScript Automation Script imports external CSV and applies formatting plan",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T3.12",
+      "feature": null,
+      "description": "External JSON Data Import queried directly via Google Sheets =QUERY engine",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 1
+    },
+    {
+      "id": "T3.13",
+      "feature": null,
+      "description": "OpenXML Dynamic Array serialization preserves cm=\"1\" and _xlws. in roundtrip",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T3.14",
+      "feature": null,
+      "description": "In-cell =AI_TRANSLATE translates category labels grouped in Pivot Table",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T3.15",
+      "feature": null,
+      "description": "Batch updates from TypeScript Script do not trigger recalculation storm in AI cache",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T3.16",
+      "feature": null,
+      "description": "Dynamic Array XLOOKUP retrieves conversion rates used in Pivot Calculated Fields",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T4.1",
+      "feature": null,
+      "description": "Corporate Financial P&L Statement: Waterfall EBITDA, Anomaly Detection, AI Summary",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 1
+    },
+    {
+      "id": "T4.2",
+      "feature": null,
+      "description": "Enterprise Sales Pipeline: CSV ingestion, Slicers, Dynamic Array Commission, Combo Chart",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T4.3",
+      "feature": null,
+      "description": "Global E-Commerce Inventory: XLOOKUP Currency, UNIQUE Categories, Sparklines, Anomaly Price",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T4.4",
+      "feature": null,
+      "description": "Multilingual HR Recruitment: AI Entity Extract, Translation, Department Slicers",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T4.5",
+      "feature": null,
+      "description": "Supply Chain Logistics: SQL =QUERY Delays, Dynamic Array Spilling, Treemap Space Allocation",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 1
+    },
+    {
+      "id": "T4.6",
+      "feature": null,
+      "description": "Executive KPI Dashboard Automation: Sandbox Script, Dual-Axis Combo, Sparklines, Atomic Undo",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T4.7",
+      "feature": null,
+      "description": "Support Ticket Sentiment Analytics: JSON Import, AI Sentiment, Cache Loop Guard, Pivot Metrics",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    },
+    {
+      "id": "T4.8",
+      "feature": null,
+      "description": "Audit & Compliance OpenXML Exchange: Dynamic Arrays, _xlws. Metadata, Schema Validation",
+      "status": "PASSED",
+      "error": null,
+      "durationMs": 0
+    }
+  ]
+}

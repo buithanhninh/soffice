@@ -167,6 +167,12 @@ const FALLBACK_CATALOG: readonly FallbackSpec[] = [
   },
   { name: 'NOT', category: 'Logical', syntax: 'NOT(logical)', descKey: 'dlgFnDescNot' },
   {
+    name: 'QUERY',
+    category: 'Lookup',
+    syntax: 'QUERY(data, query, [headers])',
+    descKey: 'dlgFnDescQuery',
+  },
+  {
     name: 'VLOOKUP',
     category: 'Lookup',
     syntax: 'VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])',

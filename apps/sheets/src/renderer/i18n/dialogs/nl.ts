@@ -399,6 +399,7 @@ export const nl = {
   dlgFnDescNper: 'Geeft het aantal perioden van een investering.',
   dlgFnDescNpv: 'Geeft de netto huidige waarde van een kasstroom bij een discontovoet.',
   dlgFnDescIrr: 'Geeft het interne rendement van een reeks kasstromen.',
+  dlgFnDescQuery: 'Voert een Google Sheets SQL-query uit over een matrix of celbereik.',
   dlgFnCatFinancial: 'Financieel',
   dlgFnCatDatabase: 'Database',
   dlgFnCatInformation: 'Informatie',

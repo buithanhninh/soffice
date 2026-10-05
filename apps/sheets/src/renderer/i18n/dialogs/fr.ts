@@ -404,6 +404,7 @@ export const fr = {
   dlgFnDescNper: 'Renvoie le nombre de périodes d’un investissement.',
   dlgFnDescNpv: 'Renvoie la valeur actuelle nette de flux de trésorerie à un taux d’escompte.',
   dlgFnDescIrr: 'Renvoie le taux de rentabilité interne d’une série de flux.',
+  dlgFnDescQuery: 'Ex??cute une requ??te SQL Google Sheets sur un tableau ou une plage de cellules.',
   dlgFnCatFinancial: 'Finances',
   dlgFnCatDatabase: 'Base de données',
   dlgFnCatInformation: 'Information',

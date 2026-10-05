@@ -400,6 +400,7 @@ export const pt = {
   dlgFnDescNper: 'Retorna o número de períodos de um investimento.',
   dlgFnDescNpv: 'Retorna o valor presente líquido de um fluxo de caixa a uma taxa de desconto.',
   dlgFnDescIrr: 'Retorna a taxa interna de retorno de uma série de fluxos de caixa.',
+  dlgFnDescQuery: 'Executa uma consulta SQL do Google Sheets em uma matriz ou intervalo de c??lulas.',
   dlgFnCatFinancial: 'Financeira',
   dlgFnCatDatabase: 'Banco de dados',
   dlgFnCatInformation: 'Informações',

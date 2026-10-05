@@ -329,6 +329,7 @@ import { installNumberFormatFix } from './numfmt-fix'
 import { installIfsEmptySetFix } from './ifs-empty-set'
 import { installCriteriaCompareCacheFix } from './criteria-compare-cache'
 import { installRateFallback } from './rate-function'
+import { installQueryFunction } from './functions/query-function'
 import {
   handleRibbonCommand as handleRibbonCommandImpl,
   type RibbonCommandContext,
@@ -1743,6 +1744,7 @@ export function App({
     })
     // RATE converges near -100% via bisection instead of erroring.
     const rateFallbackDisposable = installRateFallback(runtime)
+    const queryFunctionDisposable = installQueryFunction(runtime)
     // MINIFS/MAXIFS over zero matching cells return 0, not blank.
     const ifsEmptySetDisposable = installIfsEmptySetFix(runtime)
     // Repeated *IF(S) '=' compares on text columns survive the inverted-
@@ -2928,6 +2930,7 @@ export function App({
       errorAlignDisposable.dispose()
       cellFilenameDisposable.dispose()
       rateFallbackDisposable.dispose()
+      queryFunctionDisposable.dispose()
       ifsEmptySetDisposable.dispose()
       criteriaCompareCacheDisposable.dispose()
       formulaLexerFixDisposable.dispose()
