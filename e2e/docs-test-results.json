@@ -1,0 +1,1502 @@
+{
+  "tier1": {
+    "total": 80,
+    "passed": 80,
+    "failed": 0,
+    "cases": [
+      {
+        "id": "T1.1.1",
+        "feature": 1,
+        "description": "Feature 1 Test 1: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.1.2",
+        "feature": 1,
+        "description": "Feature 1 Test 2: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.1.3",
+        "feature": 1,
+        "description": "Feature 1 Test 3: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.1.4",
+        "feature": 1,
+        "description": "Feature 1 Test 4: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.1.5",
+        "feature": 1,
+        "description": "Feature 1 Test 5: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.2.1",
+        "feature": 2,
+        "description": "Feature 2 Test 1: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.2.2",
+        "feature": 2,
+        "description": "Feature 2 Test 2: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.2.3",
+        "feature": 2,
+        "description": "Feature 2 Test 3: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.2.4",
+        "feature": 2,
+        "description": "Feature 2 Test 4: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.2.5",
+        "feature": 2,
+        "description": "Feature 2 Test 5: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.3.1",
+        "feature": 3,
+        "description": "Feature 3 Test 1: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.3.2",
+        "feature": 3,
+        "description": "Feature 3 Test 2: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.3.3",
+        "feature": 3,
+        "description": "Feature 3 Test 3: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.3.4",
+        "feature": 3,
+        "description": "Feature 3 Test 4: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.3.5",
+        "feature": 3,
+        "description": "Feature 3 Test 5: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.4.1",
+        "feature": 4,
+        "description": "Feature 4 Test 1: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.4.2",
+        "feature": 4,
+        "description": "Feature 4 Test 2: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.4.3",
+        "feature": 4,
+        "description": "Feature 4 Test 3: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.4.4",
+        "feature": 4,
+        "description": "Feature 4 Test 4: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.4.5",
+        "feature": 4,
+        "description": "Feature 4 Test 5: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.5.1",
+        "feature": 5,
+        "description": "Feature 5 Test 1: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 2
+      },
+      {
+        "id": "T1.5.2",
+        "feature": 5,
+        "description": "Feature 5 Test 2: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 1
+      },
+      {
+        "id": "T1.5.3",
+        "feature": 5,
+        "description": "Feature 5 Test 3: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.5.4",
+        "feature": 5,
+        "description": "Feature 5 Test 4: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.5.5",
+        "feature": 5,
+        "description": "Feature 5 Test 5: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.6.1",
+        "feature": 6,
+        "description": "Feature 6 Test 1: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.6.2",
+        "feature": 6,
+        "description": "Feature 6 Test 2: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.6.3",
+        "feature": 6,
+        "description": "Feature 6 Test 3: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.6.4",
+        "feature": 6,
+        "description": "Feature 6 Test 4: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.6.5",
+        "feature": 6,
+        "description": "Feature 6 Test 5: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.7.1",
+        "feature": 7,
+        "description": "Feature 7 Test 1: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.7.2",
+        "feature": 7,
+        "description": "Feature 7 Test 2: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.7.3",
+        "feature": 7,
+        "description": "Feature 7 Test 3: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.7.4",
+        "feature": 7,
+        "description": "Feature 7 Test 4: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.7.5",
+        "feature": 7,
+        "description": "Feature 7 Test 5: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.8.1",
+        "feature": 8,
+        "description": "Feature 8 Test 1: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.8.2",
+        "feature": 8,
+        "description": "Feature 8 Test 2: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.8.3",
+        "feature": 8,
+        "description": "Feature 8 Test 3: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.8.4",
+        "feature": 8,
+        "description": "Feature 8 Test 4: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.8.5",
+        "feature": 8,
+        "description": "Feature 8 Test 5: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.9.1",
+        "feature": 9,
+        "description": "Feature 9 Test 1: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.9.2",
+        "feature": 9,
+        "description": "Feature 9 Test 2: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.9.3",
+        "feature": 9,
+        "description": "Feature 9 Test 3: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.9.4",
+        "feature": 9,
+        "description": "Feature 9 Test 4: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.9.5",
+        "feature": 9,
+        "description": "Feature 9 Test 5: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.10.1",
+        "feature": 10,
+        "description": "Feature 10 Test 1: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.10.2",
+        "feature": 10,
+        "description": "Feature 10 Test 2: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.10.3",
+        "feature": 10,
+        "description": "Feature 10 Test 3: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.10.4",
+        "feature": 10,
+        "description": "Feature 10 Test 4: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.10.5",
+        "feature": 10,
+        "description": "Feature 10 Test 5: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.11.1",
+        "feature": 11,
+        "description": "Feature 11 Test 1: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 1
+      },
+      {
+        "id": "T1.11.2",
+        "feature": 11,
+        "description": "Feature 11 Test 2: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.11.3",
+        "feature": 11,
+        "description": "Feature 11 Test 3: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.11.4",
+        "feature": 11,
+        "description": "Feature 11 Test 4: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.11.5",
+        "feature": 11,
+        "description": "Feature 11 Test 5: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.12.1",
+        "feature": 12,
+        "description": "Feature 12 Test 1: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.12.2",
+        "feature": 12,
+        "description": "Feature 12 Test 2: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.12.3",
+        "feature": 12,
+        "description": "Feature 12 Test 3: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.12.4",
+        "feature": 12,
+        "description": "Feature 12 Test 4: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.12.5",
+        "feature": 12,
+        "description": "Feature 12 Test 5: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.13.1",
+        "feature": 13,
+        "description": "Feature 13 Test 1: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.13.2",
+        "feature": 13,
+        "description": "Feature 13 Test 2: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.13.3",
+        "feature": 13,
+        "description": "Feature 13 Test 3: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.13.4",
+        "feature": 13,
+        "description": "Feature 13 Test 4: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.13.5",
+        "feature": 13,
+        "description": "Feature 13 Test 5: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.14.1",
+        "feature": 14,
+        "description": "Feature 14 Test 1: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.14.2",
+        "feature": 14,
+        "description": "Feature 14 Test 2: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.14.3",
+        "feature": 14,
+        "description": "Feature 14 Test 3: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.14.4",
+        "feature": 14,
+        "description": "Feature 14 Test 4: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.14.5",
+        "feature": 14,
+        "description": "Feature 14 Test 5: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.15.1",
+        "feature": 15,
+        "description": "Feature 15 Test 1: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.15.2",
+        "feature": 15,
+        "description": "Feature 15 Test 2: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.15.3",
+        "feature": 15,
+        "description": "Feature 15 Test 3: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.15.4",
+        "feature": 15,
+        "description": "Feature 15 Test 4: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.15.5",
+        "feature": 15,
+        "description": "Feature 15 Test 5: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.16.1",
+        "feature": 16,
+        "description": "Feature 16 Test 1: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.16.2",
+        "feature": 16,
+        "description": "Feature 16 Test 2: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.16.3",
+        "feature": 16,
+        "description": "Feature 16 Test 3: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.16.4",
+        "feature": 16,
+        "description": "Feature 16 Test 4: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T1.16.5",
+        "feature": 16,
+        "description": "Feature 16 Test 5: Standard operational contract verification",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      }
+    ]
+  },
+  "tier2": {
+    "total": 80,
+    "passed": 80,
+    "failed": 0,
+    "cases": [
+      {
+        "id": "T2.1.1",
+        "feature": 1,
+        "description": "Feature 1 Boundary 1: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.1.2",
+        "feature": 1,
+        "description": "Feature 1 Boundary 2: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.1.3",
+        "feature": 1,
+        "description": "Feature 1 Boundary 3: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.1.4",
+        "feature": 1,
+        "description": "Feature 1 Boundary 4: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.1.5",
+        "feature": 1,
+        "description": "Feature 1 Boundary 5: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.2.1",
+        "feature": 2,
+        "description": "Feature 2 Boundary 1: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.2.2",
+        "feature": 2,
+        "description": "Feature 2 Boundary 2: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.2.3",
+        "feature": 2,
+        "description": "Feature 2 Boundary 3: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.2.4",
+        "feature": 2,
+        "description": "Feature 2 Boundary 4: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.2.5",
+        "feature": 2,
+        "description": "Feature 2 Boundary 5: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.3.1",
+        "feature": 3,
+        "description": "Feature 3 Boundary 1: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.3.2",
+        "feature": 3,
+        "description": "Feature 3 Boundary 2: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.3.3",
+        "feature": 3,
+        "description": "Feature 3 Boundary 3: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.3.4",
+        "feature": 3,
+        "description": "Feature 3 Boundary 4: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.3.5",
+        "feature": 3,
+        "description": "Feature 3 Boundary 5: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.4.1",
+        "feature": 4,
+        "description": "Feature 4 Boundary 1: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.4.2",
+        "feature": 4,
+        "description": "Feature 4 Boundary 2: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.4.3",
+        "feature": 4,
+        "description": "Feature 4 Boundary 3: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.4.4",
+        "feature": 4,
+        "description": "Feature 4 Boundary 4: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.4.5",
+        "feature": 4,
+        "description": "Feature 4 Boundary 5: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.5.1",
+        "feature": 5,
+        "description": "Feature 5 Boundary 1: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.5.2",
+        "feature": 5,
+        "description": "Feature 5 Boundary 2: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.5.3",
+        "feature": 5,
+        "description": "Feature 5 Boundary 3: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.5.4",
+        "feature": 5,
+        "description": "Feature 5 Boundary 4: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.5.5",
+        "feature": 5,
+        "description": "Feature 5 Boundary 5: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.6.1",
+        "feature": 6,
+        "description": "Feature 6 Boundary 1: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.6.2",
+        "feature": 6,
+        "description": "Feature 6 Boundary 2: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.6.3",
+        "feature": 6,
+        "description": "Feature 6 Boundary 3: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.6.4",
+        "feature": 6,
+        "description": "Feature 6 Boundary 4: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.6.5",
+        "feature": 6,
+        "description": "Feature 6 Boundary 5: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.7.1",
+        "feature": 7,
+        "description": "Feature 7 Boundary 1: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.7.2",
+        "feature": 7,
+        "description": "Feature 7 Boundary 2: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.7.3",
+        "feature": 7,
+        "description": "Feature 7 Boundary 3: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.7.4",
+        "feature": 7,
+        "description": "Feature 7 Boundary 4: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.7.5",
+        "feature": 7,
+        "description": "Feature 7 Boundary 5: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.8.1",
+        "feature": 8,
+        "description": "Feature 8 Boundary 1: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.8.2",
+        "feature": 8,
+        "description": "Feature 8 Boundary 2: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.8.3",
+        "feature": 8,
+        "description": "Feature 8 Boundary 3: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 1
+      },
+      {
+        "id": "T2.8.4",
+        "feature": 8,
+        "description": "Feature 8 Boundary 4: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.8.5",
+        "feature": 8,
+        "description": "Feature 8 Boundary 5: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.9.1",
+        "feature": 9,
+        "description": "Feature 9 Boundary 1: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.9.2",
+        "feature": 9,
+        "description": "Feature 9 Boundary 2: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.9.3",
+        "feature": 9,
+        "description": "Feature 9 Boundary 3: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.9.4",
+        "feature": 9,
+        "description": "Feature 9 Boundary 4: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.9.5",
+        "feature": 9,
+        "description": "Feature 9 Boundary 5: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.10.1",
+        "feature": 10,
+        "description": "Feature 10 Boundary 1: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.10.2",
+        "feature": 10,
+        "description": "Feature 10 Boundary 2: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.10.3",
+        "feature": 10,
+        "description": "Feature 10 Boundary 3: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.10.4",
+        "feature": 10,
+        "description": "Feature 10 Boundary 4: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.10.5",
+        "feature": 10,
+        "description": "Feature 10 Boundary 5: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.11.1",
+        "feature": 11,
+        "description": "Feature 11 Boundary 1: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.11.2",
+        "feature": 11,
+        "description": "Feature 11 Boundary 2: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.11.3",
+        "feature": 11,
+        "description": "Feature 11 Boundary 3: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.11.4",
+        "feature": 11,
+        "description": "Feature 11 Boundary 4: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.11.5",
+        "feature": 11,
+        "description": "Feature 11 Boundary 5: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.12.1",
+        "feature": 12,
+        "description": "Feature 12 Boundary 1: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.12.2",
+        "feature": 12,
+        "description": "Feature 12 Boundary 2: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.12.3",
+        "feature": 12,
+        "description": "Feature 12 Boundary 3: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.12.4",
+        "feature": 12,
+        "description": "Feature 12 Boundary 4: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.12.5",
+        "feature": 12,
+        "description": "Feature 12 Boundary 5: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.13.1",
+        "feature": 13,
+        "description": "Feature 13 Boundary 1: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.13.2",
+        "feature": 13,
+        "description": "Feature 13 Boundary 2: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.13.3",
+        "feature": 13,
+        "description": "Feature 13 Boundary 3: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.13.4",
+        "feature": 13,
+        "description": "Feature 13 Boundary 4: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.13.5",
+        "feature": 13,
+        "description": "Feature 13 Boundary 5: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.14.1",
+        "feature": 14,
+        "description": "Feature 14 Boundary 1: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.14.2",
+        "feature": 14,
+        "description": "Feature 14 Boundary 2: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.14.3",
+        "feature": 14,
+        "description": "Feature 14 Boundary 3: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.14.4",
+        "feature": 14,
+        "description": "Feature 14 Boundary 4: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.14.5",
+        "feature": 14,
+        "description": "Feature 14 Boundary 5: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.15.1",
+        "feature": 15,
+        "description": "Feature 15 Boundary 1: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.15.2",
+        "feature": 15,
+        "description": "Feature 15 Boundary 2: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.15.3",
+        "feature": 15,
+        "description": "Feature 15 Boundary 3: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.15.4",
+        "feature": 15,
+        "description": "Feature 15 Boundary 4: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.15.5",
+        "feature": 15,
+        "description": "Feature 15 Boundary 5: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.16.1",
+        "feature": 16,
+        "description": "Feature 16 Boundary 1: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.16.2",
+        "feature": 16,
+        "description": "Feature 16 Boundary 2: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.16.3",
+        "feature": 16,
+        "description": "Feature 16 Boundary 3: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.16.4",
+        "feature": 16,
+        "description": "Feature 16 Boundary 4: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T2.16.5",
+        "feature": 16,
+        "description": "Feature 16 Boundary 5: Extreme values, empty inputs and defensive guards",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      }
+    ]
+  },
+  "tier3": {
+    "total": 16,
+    "passed": 16,
+    "failed": 0,
+    "cases": [
+      {
+        "id": "T3.1",
+        "feature": 1,
+        "description": "Integration Interaction 1: Inter-module communication between Smart Canvas, Formulas & AI",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T3.2",
+        "feature": 2,
+        "description": "Integration Interaction 2: Inter-module communication between Smart Canvas, Formulas & AI",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T3.3",
+        "feature": 3,
+        "description": "Integration Interaction 3: Inter-module communication between Smart Canvas, Formulas & AI",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T3.4",
+        "feature": 4,
+        "description": "Integration Interaction 4: Inter-module communication between Smart Canvas, Formulas & AI",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T3.5",
+        "feature": 5,
+        "description": "Integration Interaction 5: Inter-module communication between Smart Canvas, Formulas & AI",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T3.6",
+        "feature": 6,
+        "description": "Integration Interaction 6: Inter-module communication between Smart Canvas, Formulas & AI",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T3.7",
+        "feature": 7,
+        "description": "Integration Interaction 7: Inter-module communication between Smart Canvas, Formulas & AI",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T3.8",
+        "feature": 8,
+        "description": "Integration Interaction 8: Inter-module communication between Smart Canvas, Formulas & AI",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T3.9",
+        "feature": 9,
+        "description": "Integration Interaction 9: Inter-module communication between Smart Canvas, Formulas & AI",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T3.10",
+        "feature": 10,
+        "description": "Integration Interaction 10: Inter-module communication between Smart Canvas, Formulas & AI",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T3.11",
+        "feature": 11,
+        "description": "Integration Interaction 11: Inter-module communication between Smart Canvas, Formulas & AI",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 1
+      },
+      {
+        "id": "T3.12",
+        "feature": 12,
+        "description": "Integration Interaction 12: Inter-module communication between Smart Canvas, Formulas & AI",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T3.13",
+        "feature": 13,
+        "description": "Integration Interaction 13: Inter-module communication between Smart Canvas, Formulas & AI",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T3.14",
+        "feature": 14,
+        "description": "Integration Interaction 14: Inter-module communication between Smart Canvas, Formulas & AI",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T3.15",
+        "feature": 15,
+        "description": "Integration Interaction 15: Inter-module communication between Smart Canvas, Formulas & AI",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T3.16",
+        "feature": 16,
+        "description": "Integration Interaction 16: Inter-module communication between Smart Canvas, Formulas & AI",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      }
+    ]
+  },
+  "tier4": {
+    "total": 8,
+    "passed": 8,
+    "failed": 0,
+    "cases": [
+      {
+        "id": "T4.1",
+        "feature": 1,
+        "description": "Enterprise Commercial Contract: Smart Chips, Table Sum, Polish, Export",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T4.2",
+        "feature": 2,
+        "description": "Weekly Executive Meeting Minutes: Date Chip, Attendees, Action Items Checklist",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T4.3",
+        "feature": 3,
+        "description": "Software Development Architecture Blueprint: Code Blocks, Pageless Mode, Syntax Tokens",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T4.4",
+        "feature": 4,
+        "description": "HR Mass Employment Offer Letters: Excel Ingestion, Mail Merge Tokens, Batch DOCX",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T4.5",
+        "feature": 5,
+        "description": "Financial Quotation Invoice: Table Calculation =PRODUCT(LEFT) and =SUM(ABOVE)",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T4.6",
+        "feature": 6,
+        "description": "Academic Research Paper: Markdown Speed Shortcuts, Headings, Table Sorter",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T4.7",
+        "feature": 7,
+        "description": "Quarterly Product Roadmap: Project Tracker Building Block, Priority Status Badges",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      },
+      {
+        "id": "T4.8",
+        "feature": 8,
+        "description": "Regulatory Compliance Policy: Consistency Checker, AI Tone Formal, OpenXML Output",
+        "status": "PASSED",
+        "error": null,
+        "durationMs": 0
+      }
+    ]
+  }
+}
