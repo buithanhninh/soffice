@@ -173,6 +173,30 @@ const FALLBACK_CATALOG: readonly FallbackSpec[] = [
     descKey: 'dlgFnDescQuery',
   },
   {
+    name: 'AI',
+    category: 'Lookup',
+    syntax: 'AI(prompt, [cell_or_range])',
+    descKey: 'dlgFnDescAi',
+  },
+  {
+    name: 'AI_EXTRACT',
+    category: 'Text',
+    syntax: 'AI_EXTRACT(pattern, text)',
+    descKey: 'dlgFnDescAiExtract',
+  },
+  {
+    name: 'AI_TRANSLATE',
+    category: 'Text',
+    syntax: 'AI_TRANSLATE(text, target_lang)',
+    descKey: 'dlgFnDescAiTranslate',
+  },
+  {
+    name: 'SPARKLINE',
+    category: 'Lookup',
+    syntax: 'SPARKLINE(data, [options])',
+    descKey: 'dlgFnDescSparkline',
+  },
+  {
     name: 'VLOOKUP',
     category: 'Lookup',
     syntax: 'VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])',

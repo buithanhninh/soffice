@@ -330,6 +330,8 @@ import { installIfsEmptySetFix } from './ifs-empty-set'
 import { installCriteriaCompareCacheFix } from './criteria-compare-cache'
 import { installRateFallback } from './rate-function'
 import { installQueryFunction } from './functions/query-function'
+import { installAiFunctions } from './functions/ai-functions'
+import { installSparklineFunction } from './functions/sparkline-function'
 import {
   handleRibbonCommand as handleRibbonCommandImpl,
   type RibbonCommandContext,
@@ -1745,6 +1747,8 @@ export function App({
     // RATE converges near -100% via bisection instead of erroring.
     const rateFallbackDisposable = installRateFallback(runtime)
     const queryFunctionDisposable = installQueryFunction(runtime)
+    const aiFunctionsDisposable = installAiFunctions(runtime)
+    const sparklineFunctionDisposable = installSparklineFunction(runtime)
     // MINIFS/MAXIFS over zero matching cells return 0, not blank.
     const ifsEmptySetDisposable = installIfsEmptySetFix(runtime)
     // Repeated *IF(S) '=' compares on text columns survive the inverted-
@@ -2931,6 +2935,8 @@ export function App({
       cellFilenameDisposable.dispose()
       rateFallbackDisposable.dispose()
       queryFunctionDisposable.dispose()
+      aiFunctionsDisposable.dispose()
+      sparklineFunctionDisposable.dispose()
       ifsEmptySetDisposable.dispose()
       criteriaCompareCacheDisposable.dispose()
       formulaLexerFixDisposable.dispose()
